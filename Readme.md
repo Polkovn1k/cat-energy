@@ -1,5 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/cat-energy.svg)](https://greenkeeper.io/)
+
 * Студент: [Юлия Дарзнек](https://up.htmlacademy.ru/adaptive/14/user/645097).
 * Наставник: `Неизвестно`.
 
