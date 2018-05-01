@@ -1,5 +1,46 @@
+@import "general/fonts.scss";
 @import "general/variables.scss";
 @import "general/mixins.scss";
 @import "general/normalize.scss";
 @import "general/global.scss";
-@import "general/fonts.scss";
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/button.scss";
+@import "blocks/main.scss";
+@import "blocks/promo.scss";
+@import "blocks/program.scss";
+@import "blocks/about.scss";
+@import "blocks/sample.scss";
+@import "blocks/range-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/catalog.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/add-catalog.scss";
+@import "blocks/add-product.scss";
+@import "blocks/program-form.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/visually-hidden.scss";
+
+* {
+  outline: 1px dashed lightgray;
+}
+
+.header {
+  min-height: 65px;
+
+  @media (min-width: $tablet) {
+
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+
+  & * {
+    display: none;
+  }
+}
+

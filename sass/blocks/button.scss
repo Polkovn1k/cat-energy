@@ -1,0 +1,44 @@
+.button {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &--promo {
+    font-size: 14px;
+    line-height: 1.29;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &--all {
+    color: $add-color-2;
+
+    @media (min-width: $tablet) {
+      color: $small-text;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &--form {
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+}

@@ -1,0 +1,68 @@
+.footer {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__logo {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__logo-link {
+
+    img {}
+
+    @media (min-width: $tablet) {
+
+      img {}
+    }
+
+    @media (min-width: $desktop) {
+
+      img {}
+    }
+  }
+
+  &__dev {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__dev-link {
+    font-family: $add-font;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: $small-text;
+
+    span {}
+
+    img {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      img {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      img {}
+    }
+  }
+}

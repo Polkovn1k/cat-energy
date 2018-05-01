@@ -1,0 +1,27 @@
+.catalog {
+
+  @media (min-width: $tablet) {
+
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 1.67;
+    font-weight: 400;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {
+
+    }
+  }
+}

@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Oswald";
-  src:  url("../fonts/oswald.woff2") format("woff2"),
-  url("../fonts/oswald.woff") format("woff");
+  src: local("Oswald"),
+    url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+  fonts-display: swap;
 }

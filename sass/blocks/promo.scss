@@ -1,0 +1,44 @@
+.promo {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: $white;
+
+    @media (min-width: $tablet) {
+      font-size: 60px;
+      color: $big-text;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      color: $big-text;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+}

@@ -1,0 +1,66 @@
+.program {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__type {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1.54;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__text {
+    font-family: $add-font;
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 400;
+    color: $small-text;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__link {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+}

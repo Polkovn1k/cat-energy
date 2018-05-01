@@ -15,24 +15,25 @@
       <div class="navigation__container">
         <div class="navigation__logo">
           <a href="index.html" class="navigation__logo-link">
-              <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
-            </a>
+            <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
+          </a>
         </div>
         <ul class="navigation__list">
           <li class="navigation__item"><a href="index.html" class="navigation__item-link">главная</a></li>
           <li class="navigation__item"><a href="catalog.html" class="navigation__item-link">каталог продукции</a></li>
           <li class="navigation__item"><a class="navigation__item-link">подбор программы</a></li>
         </ul>
+        <button type="button" class="navigation__tog">открыть или закрыть основное меню</button>
       </div>
     </nav>
   </header>
   <main class="main">
-    <section class="program">
-      <h1 class="program__title">подбор программы</h1>
-      <p class="program__text">заполните анкету и мы подберем программу питания для вашего кота</p>
+    <section class="program-form">
+      <h1 class="program-form__title">Подбор программы</h1>
+      <p class="program-form__text">заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru/" name="form" method="post" class="form">
         <fieldset class="form__cat">
-          <legend class="form__title visually-hidden">контактные данные кота</legend>
+          <legend class="form__title visually-hidden">Контактные данные кота</legend>
           <div class="form__cat-container form__cat-container--none">
             <div class="form__cat-inputs">
               <label class="form__cat-name">
@@ -65,7 +66,7 @@
           </div>
         </fieldset>
         <fieldset class="form__owner">
-          <legend class="form__title">контактные данные (владельца кота)</legend>
+          <legend class="form__title">Контактные данные (владельца кота)</legend>
           <div class="form__owner-container">
             <label class="form__owner-email">
               <span>e-mail:<sup>*</sup></span>
@@ -78,34 +79,34 @@
           </div>
         </fieldset>
         <fieldset class="form__comment">
-          <legend class="form__title">комментарий</legend>
+          <legend class="form__title">Комментарий</legend>
           <div class="form__comment-container">
             <textarea name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__addition">
-          <legend class="form__title">дополнительно</legend>
+          <legend class="form__title">Дополнительно</legend>
           <div class="form__addition-container">
             <label class="form__addition-sugar">
               <span>сахарозаменитель</span>
               <input type="checkbox" name="addition-sugar" checked>
             </label>
-            <label class="form__addition-sugar">
+            <label class="form__addition-water">
               <span>питьевая вода</span>
               <input type="checkbox" name="addition-water">
             </label>
-            <label class="form__addition-sugar">
+            <label class="form__addition-milk">
               <span>молоко</span>
               <input type="checkbox" name="addition-milk">
             </label>
-            <label class="form__addition-sugar">
+            <label class="form__addition-vito">
               <span>витамины</span>
               <input type="checkbox" name="addition-vitamin">
             </label>
           </div>
         </fieldset>
         <div class="form__push">
-          <button class="button" type="submit">отправить заявку</button>
+          <button class="button button--form" type="submit">отправить заявку</button>
           <span><sup>*</sup> — Обязательные поля</span>
         </div>
       </form>
@@ -124,8 +125,8 @@
     <div class="footer__container">
       <div class="footer__logo">
         <a href="index.html" class="footer__logo-link">
-            <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
-          </a>
+          <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
+        </a>
       </div>
       <div class="social">
         <ul class="social__list">
@@ -141,12 +142,10 @@
         </ul>
       </div>
       <div class="footer__dev">
-        <a href="https://htmlacademy.ru" class="footer__dev-link">HTML Academy</a>
-        <div class="footer__dev-logo">
-          <a href="https://htmlacademy.ru" class="footer__dev-logo-link">
-              <img src="img/academy-mobile.svg" width="1" height="1" alt="HTML Academy" title="HTML Academy">
-            </a>
-        </div>
+        <a href="https://htmlacademy.ru" class="footer__dev-link">
+          <span>HTML Academy</span>
+          <img src="img/academy-mobile.svg" width="1" height="1" alt="HTML Academy" title="HTML Academy">
+        </a>
       </div>
     </div>
   </footer>

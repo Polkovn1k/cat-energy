@@ -1,0 +1,66 @@
+.range-slider {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__img {
+
+    img {}
+
+    @media (min-width: $tablet) {
+
+      img {}
+    }
+
+    @media (min-width: $desktop) {
+
+      img {}
+    }
+  }
+
+  &__control {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__direction {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__scale {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__bar {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__handle {
+    font-size: 0;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+}

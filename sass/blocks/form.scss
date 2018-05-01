@@ -1,0 +1,407 @@
+.form {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__cat {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 36px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-container--none {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-inputs {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-name {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {
+
+      }
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__cat-weight {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__cat-age {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__radio {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-thin {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__cat-thick {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__cat-unknown {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__owner {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__owner-container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__owner-email {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__owner-tel {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__comment {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__comment-container {
+
+    textarea {}
+
+    @media (min-width: $tablet) {
+
+      textarea {}
+    }
+
+    @media (min-width: $desktop) {
+
+      textarea {}
+    }
+  }
+
+  &__addition {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__addition-container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__addition-sugar {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__addition-water {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__addition-milk {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__addition-vito {
+
+    span {
+      @include font-label-name();
+    }
+
+    input {}
+
+    @media (min-width: $tablet) {
+
+      span {}
+
+      input {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+
+      input {}
+    }
+  }
+
+  &__push {
+
+    span {
+      font-family: $add-font;
+      font-size: 14px;
+      line-height: 1.14;
+      font-weight: 400;
+      color: $small-text;
+    }
+
+    @media (min-width: $tablet) {
+
+      span {
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+    }
+  }
+}

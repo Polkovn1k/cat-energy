@@ -1,0 +1,65 @@
+.add-product {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    a {
+      color: $add-color-2;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+
+      a {}
+    }
+
+    @media (min-width: $desktop) {
+
+      a {}
+    }
+  }
+
+  &__text {
+    font-family: $add-font;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: $small-text;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__quantity {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__value {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+}

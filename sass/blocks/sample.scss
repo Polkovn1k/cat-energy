@@ -1,0 +1,106 @@
+.sample {
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 1.67;
+    font-weight: 400;
+    color: $big-text;
+
+    @media (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__text {
+    font-family: $add-font;
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 400;
+    color: $small-text;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__list {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__item {
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $big-text;
+
+    sub {
+      font-family: $add-font;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: none;
+      color: $small-text;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 30px;
+      line-height: 1.23;
+
+      sub {
+        font-size: 14px;
+        line-height: 1;
+      }
+    }
+
+    @media (min-width: $desktop) {
+
+      sub {}
+    }
+  }
+
+  &__value {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.43;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $big-text;
+
+    span {}
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1;
+
+      span {}
+    }
+
+    @media (min-width: $desktop) {
+
+      span {}
+    }
+  }
+}
