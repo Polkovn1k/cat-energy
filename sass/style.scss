@@ -24,15 +24,16 @@
 @import "blocks/social.scss";
 @import "blocks/visually-hidden.scss";
 
-* {
+/* * {
   outline: 1px dashed lightgray;
-}
+  73 82
+} */
 
 .header {
   min-height: 65px;
 
   @media (min-width: $tablet) {
-
+    min-height: 92px;
   }
 
   @media (min-width: $desktop) {
@@ -43,4 +44,3 @@
     display: none;
   }
 }
-

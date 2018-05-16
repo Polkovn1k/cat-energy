@@ -1,12 +1,8 @@
 .catalog {
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) {}
 
-  }
-
-  @media (min-width: $desktop) {
-
-  }
+  @media (min-width: $desktop) {}
 
   &__title {
     font-family: $main-font;
@@ -20,8 +16,6 @@
       line-height: 1;
     }
 
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 }

@@ -1,10 +1,14 @@
 .sample {
+  background: $silver-bg;
 
   @media (min-width: $tablet) {}
 
   @media (min-width: $desktop) {}
 
   &__container {
+    @include container();
+    padding-top: 17px;
+    padding-bottom: 35px;
 
     @media (min-width: $tablet) {}
 
@@ -12,6 +16,8 @@
   }
 
   &__title {
+    display: block;
+    padding-bottom: 23px;
     font-family: $main-font;
     font-size: 36px;
     line-height: 1.67;
@@ -27,6 +33,9 @@
   }
 
   &__text {
+    @include field-reset();
+    padding-right: 1%;
+    padding-bottom: 25px;
     font-family: $add-font;
     font-size: 14px;
     line-height: 1.29;
@@ -42,6 +51,13 @@
   }
 
   &__list {
+    @include order-reset();
+    @include flex-row();
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 35px;
 
     @media (min-width: $tablet) {}
 
@@ -49,52 +65,73 @@
   }
 
   &__item {
+    @include flex-element();
+    flex-grow: 1;
+    min-width: 124px;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 17px;
     font-family: $main-font;
     font-size: 24px;
     line-height: 1;
     font-weight: 400;
+    text-align: center;
     text-transform: uppercase;
     color: $big-text;
-
+    border: 1px solid $small-border;
+    border-radius: 3px;
     sub {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      min-width: 45%;
+      padding: 0 15px;
+      transform: translate(-50%, 65%);
+      text-align: center;
       font-family: $add-font;
       font-size: 12px;
       line-height: 1;
       font-weight: 400;
       text-transform: none;
       color: $small-text;
+      background: $silver-bg;
     }
 
     @media (min-width: $tablet) {
       font-size: 30px;
       line-height: 1.23;
-
       sub {
         font-size: 14px;
         line-height: 1;
       }
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $desktop) {}
+  }
 
-      sub {}
-    }
+  &__item:last-child {
+    margin-left: 32px;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
   }
 
   &__value {
+    @include field-reset();
+    padding-bottom: 33px;
+    text-align: center;
     font-family: $main-font;
     font-size: 14px;
     line-height: 1.43;
     font-weight: 400;
     text-transform: uppercase;
     color: $big-text;
-
     span {}
 
     @media (min-width: $tablet) {
       font-size: 20px;
       line-height: 1;
-
       span {}
     }
 

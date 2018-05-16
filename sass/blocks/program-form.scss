@@ -1,12 +1,8 @@
 .program-form {
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) {}
 
-  }
-
-  @media (min-width: $desktop) {
-
-  }
+  @media (min-width: $desktop) {}
 
   &__title {
     font-family: $main-font;
@@ -20,9 +16,7 @@
       line-height: 1;
     }
 
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 
   &__text {
@@ -38,8 +32,6 @@
       line-height: 1.5;
     }
 
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 }

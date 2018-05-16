@@ -17,19 +17,16 @@
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
-
     a {
       color: $add-color-2;
     }
 
     @media (min-width: $tablet) {
       font-size: 20px;
-
       a {}
     }
 
     @media (min-width: $desktop) {
-
       a {}
     }
   }

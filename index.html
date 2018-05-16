@@ -10,12 +10,19 @@
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
     <nav class="navigation">
       <div class="navigation__container">
         <div class="navigation__logo">
           <a class="navigation__logo-link">
-            <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/svg-content/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg-content/logo-tablet.svg">
+              <img src="img/svg-content/logo-mobile.svg" alt="Cat Energy Logo" title="Cat Energy Logo">
+            </picture>
           </a>
         </div>
         <ul class="navigation__list">
@@ -31,7 +38,14 @@
     <section class="promo">
       <div class="promo__container">
         <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__text">занялся собой? займись котом</p>
+        <p class="promo__text">занялся собой? займись котом!</p>
+        <div class="promo__img">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/content/promo--food-desktop@1x.png 1x, img/content/promo--food-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/promo--food-tablet@1x.jpg 1x, img/content/promo--food-tablet@2x.jpg 2x">
+            <img src="img/content/promo--food-mobile@1x.png" srcset="img/content/promo--food-mobile@1x.png 1x, img/content/promo--food-mobile@2x.png 2x" alt="Cat Energy - лучшая еда для Вашего кота!" title="Cat Energy - лучшая еда для Вашего кота!">
+          </picture>
+        </div>
         <a href="form.html" class="button button--promo">подобрать программу</a>
       </div>
     </section>
@@ -44,7 +58,7 @@
         </section>
         <section class="program__type">
           <h2 class="program__title">набор массы</h2>
-          <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <p class="program__text program__text--mass">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="program__link">каталог pro</a>
         </section>
       </div>
@@ -52,12 +66,12 @@
     <section class="about">
       <div class="about__container">
         <h2 class="about__title">Как это работает</h2>
-        <ul class="about__list">
+        <ol class="about__list">
           <li class="about__item">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="about__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="about__item">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
-          <li class="about__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-        </ul>
+          <li class="about__item about__item--chemical">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="about__item about__item--eat">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
+          <li class="about__item about__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ol>
       </div>
     </section>
     <section class="sample">
@@ -65,22 +79,35 @@
         <span class="sample__title">Живой пример</span>
         <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="sample__list">
-          <li class="sample__item">5 кг<sub>снижение веса</sub></li>
-          <li class="sample__item">60 дней<sub>затрачено времени</sub></li>
+          <li class="sample__item">
+            5 кг<sub>снижение веса</sub>
+          </li>
+          <li class="sample__item">
+            60 дней<sub>затрачено времени</sub>
+          </li>
         </ul>
-        <p class="sample__value">затраты на питание:<span>15 000 руб.</span></p>
+        <p class="sample__value">затраты на питание: <span>15 000 руб.</span></p>
         <div class="range-slider">
           <div class="range-slider__img">
-            <img src="#" width="1" height="1" alt="Fat Cat" title="Fat Cat">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/content/range-slider--before-desktop@1x.png 1x, img/content/range-slider--before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/content/range-slider--before-tablet@1x.png 1x, img/content/range-slider--before-tablet@2x.png 2x">
+              <img src="img/content/range-slider--before-mobile@1x.png" srcset="img/content/range-slider--before-mobile@1x.png 1x, img/content/range-slider--before-mobile@2x.png" class="range-slider__img-before" alt="Cat before" title="Cat before">
+            </picture>
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/content/range-slider--after-desktop@1x.png 1x, img/content/range-slider--after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/content/range-slider--after-tablet@1x.png 1x, img/content/range-slider--after-tablet@2x.png 2x">
+              <img src="img/content/range-slider--after-mobile@1x.png" srcset="img/content/range-slider--after-mobile@1x.png 1x, img/content/range-slider--after-mobile@2x.png" class="range-slider__img-after" alt="Cat after" title="Cat after">
+            </picture>
           </div>
           <div class="range-slider__control">
-            <span class="range-slider__direction">было</span>
+            <button type="button" class="range-slider__direction">было</button>
             <div class="range-slider__scale">
-              <div class="range-slider__bar"></div>
+              <div type="button" class="range-slider__bar"></div>
               <span class="range-slider__handle">левый ползунок</span>
               <span class="range-slider__handle">правый ползунок</span>
             </div>
-            <span class="range-slider__direction">стало</span>
+            <button class="range-slider__direction">стало</button>
           </div>
         </div>
       </div>
@@ -88,10 +115,12 @@
     <section class="contacts">
       <div class="contacts__container">
         <address class="contacts__address">
-          <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
+          <span class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</span>
           <p class="contacts__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </address>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124161!2d30.32089461631194!3d59.93879686904762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525805344184" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -99,26 +128,46 @@
     <div class="footer__container">
       <div class="footer__logo">
         <a class="footer__logo-link">
-          <img src="img/logo-mobile.svg" width="1" height="1" alt="Cat Energy" title="Cat Energy">
+          <picture>
+            <img src="img/svg-content/logo-footer.svg" alt="Cat Energy Logo" title="Cat Energy Logo">
+          </picture>
         </a>
       </div>
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="vk.com" class="social__item-link">Мы в VK</a>
+            <a href="vk.com" class="social__item-link social__item-link--vk">
+              Мы в VK
+              <svg width="22" height="12" aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a href="instagram.com" class="social__item-link">Мы в Instagram</a>
+            <a href="instagram.com" class="social__item-link social__item-link--inst">
+            Мы в Instagram
+            <svg width="16" height="16" aria-hidden="true" role="presentation">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--inst"></use>
+            </svg>
+          </a>
           </li>
           <li class="social__item">
-            <a href="facebook.com" class="social__item-link">Мы в Facebook</a>
+            <a href="facebook.com" class="social__item-link social__item-link--fb">
+              Мы в Facebook
+              <svg width="10" height="19" aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--fb"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer__dev">
         <a href="https://htmlacademy.ru" class="footer__dev-link">
           <span>HTML Academy</span>
-          <img src="img/academy-mobile.svg" width="1" height="1" alt="HTML Academy" title="HTML Academy">
+          <svg width="27" height="34" role="img">
+            <title>HTML Academy</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-academy"></use>
+          </svg>
         </a>
       </div>
     </div>

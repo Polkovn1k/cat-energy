@@ -1,50 +1,181 @@
-.about {
-
-  @media (min-width: $tablet) {}
-
-  @media (min-width: $desktop) {}
-
-  &__container {
+  .about {
 
     @media (min-width: $tablet) {}
 
     @media (min-width: $desktop) {}
-  }
 
-  &__title {
-    font-family: $main-font;
-    font-size: 36px;
-    line-height: 1.67;
-    font-weight: 400;
-    color: $big-text;
+    &__container {
+      @include container();
+      padding-bottom: 20px;
 
-    @media (min-width: $tablet) {
-      font-size: 60px;
-      line-height: 1;
+      @media (min-width: $tablet) {}
+
+      @media (min-width: $desktop) {}
     }
 
-    @media (min-width: $desktop) {}
-  }
+    &__title {
+      @include field-reset();
+      padding-bottom: 30px;
+      font-family: $main-font;
+      font-size: 36px;
+      line-height: 1.67;
+      font-weight: 400;
+      color: $big-text;
 
-  &__list {
+      @media (min-width: $tablet) {
+        padding-bottom: 74px;
+        font-size: 60px;
+        line-height: 1;
+      }
 
-    @media (min-width: $tablet) {}
-
-    @media (min-width: $desktop) {}
-  }
-
-  &__item {
-    font-family: $add-font;
-    font-size: 14px;
-    line-height: 1.29;
-    font-weight: 400;
-    color: $small-text;
-
-    @media (min-width: $tablet) {
-      font-size: 16px;
-      line-height: 1.5;
+      @media (min-width: $desktop) {}
     }
 
-    @media (min-width: $desktop) {}
+    &__list {
+      @include order-reset();
+
+      @media (min-width: $tablet) {
+        @include flex-row-s();
+        justify-content: center;
+        flex-wrap: wrap;
+        counter-reset: itemNumber 0;
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item {
+      position: relative;
+      min-height: 80px;
+      padding-bottom: 26px;
+      padding-left: 80px;
+      font-family: $add-font;
+      font-size: 14px;
+      line-height: 1.29;
+      font-weight: 400;
+      color: $small-text;
+
+      @media (min-width: $tablet) {
+        @include flex-element();
+        padding-top: 110px;
+        padding-right: 18.36%;
+        padding-bottom: 135px;
+        padding-left: 0;
+        width: 54.2%;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+
+    &__item:nth-child(2n) {
+
+      @media (min-width: $tablet) {
+        width: 45.8%;
+        padding-right: 7.06%;
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item::before {
+      @include pseudo();
+      top: -2px;
+      left: 0px;
+      width: 60px;
+      height: 60px;
+      background: $green url("../img/icons/about--eco@1x.png") no-repeat center;
+      background-size: 84%;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: $green url("../img/icons/about--eco@2x.png") no-repeat center;
+        background-size: 84%;
+      }
+
+      @media (min-width: $tablet) {
+        width: 80px;
+        height: 80px;
+        background-size: 64%;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-size: 64%;
+        }
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item--chemical::before {
+      background: $green url("../img/icons/about--chemical@1x.png") no-repeat center;
+      background-size: 84%;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: $green url("../img/icons/about--chemical@2x.png") no-repeat center;
+        background-size: 84%;
+      }
+
+      @media (min-width: $tablet) {
+        background-size: 64%;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-size: 64%;
+        }
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item--eat::before {
+      background: $green url("../img/icons/about--eat@1x.png") no-repeat center;
+      background-size: 84%;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: $green url("../img/icons/about--eat@2x.png") no-repeat center;
+        background-size: 84%;
+      }
+
+      @media (min-width: $tablet) {
+        background-size: 64%;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-size: 64%;
+        }
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item--clock::before {
+      background: $green url("../img/icons/about--clock@1x.png") no-repeat center;
+      background-size: 84%;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: $green url("../img/icons/about--clock@2x.png") no-repeat center;
+        background-size: 84%;
+      }
+
+      @media (min-width: $tablet) {
+        background-size: 64%;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-size: 64%;
+        }
+      }
+
+      @media (min-width: $desktop) {}
+    }
+
+    &__item::after {
+
+      @media (min-width: $tablet) {
+        position: absolute;
+        display: block;
+        top: -40px;
+        left: 115px;
+        z-index: -1;
+        counter-increment: itemNumber;
+        content: counter(itemNumber);
+        font-family: $main-font;
+        font-size: 281px;
+        line-height: 1;
+        font-weight: 400;
+        color: $silver-bg;
+      }
+
+      @media (min-width: $desktop) {}
+    }
   }
-}

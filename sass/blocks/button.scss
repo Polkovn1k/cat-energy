@@ -1,22 +1,39 @@
 .button {
+  display: block;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
   font-family: $main-font;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
   text-transform: uppercase;
   color: $white;
+  background: $green;
+  border: none;
 
   @media (min-width: $tablet) {}
 
   @media (min-width: $desktop) {}
 
   &--promo {
+    position: relative;
+    margin: 0 auto;
+    max-width: 280px;
     font-size: 14px;
     line-height: 1.29;
 
     @media (min-width: $tablet) {
+      z-index: 10;
+      max-width: 245px;
+      margin: 0;
+      margin-left: 12.7%;
+      padding-top: 16px;
+      padding-bottom: 16px;
       font-size: 20px;
       line-height: 1;
+      order: 3;
     }
 
     @media (min-width: $desktop) {}

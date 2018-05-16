@@ -5,13 +5,47 @@
   @media (min-width: $desktop) {}
 
   &__container {
+    @include container();
+    position: relative;
+    padding-top: 28px;
+    padding-bottom: 22px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      @include flex-column();
+      padding-top: 48px;
+      padding-bottom: 1px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__container::before {
+    @include pseudo();
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 306px;
+    background: #63a73a url("../img/content/promo--bg-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #63a73a url("../img/content/promo--bg-mobile@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
 
     @media (min-width: $desktop) {}
   }
 
   &__title {
+    @include field-reset();
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
     font-family: $main-font;
     font-size: 36px;
     line-height: 1;
@@ -19,14 +53,24 @@
     color: $white;
 
     @media (min-width: $tablet) {
+      width: 85%;
+      padding-bottom: 41px;
+      padding-left: 12.3%;
+      text-align: left;
       font-size: 60px;
       color: $big-text;
+      order: 1;
     }
 
     @media (min-width: $desktop) {}
   }
 
   &__text {
+    @include field-reset();
+    position: relative;
+    z-index: 1;
+    padding-bottom: 27px;
+    text-align: center;
     font-family: $main-font;
     font-size: 14px;
     line-height: 1;
@@ -35,8 +79,30 @@
     color: $white;
 
     @media (min-width: $tablet) {
+      z-index: 10;
+      width: 85%;
+      padding-bottom: 44px;
+      padding-left: 12.3%;
+      text-align: left;
       font-size: 20px;
       color: $big-text;
+      order: 2;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3px;
+    text-align: center;
+    img {}
+
+    @media (min-width: $tablet) {
+      margin-top: -76px;
+      padding-bottom: 0;
+      order: 4;
     }
 
     @media (min-width: $desktop) {}

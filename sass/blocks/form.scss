@@ -47,7 +47,6 @@
   }
 
   &__cat-name {
-
     span {
       @include font-label-name();
     }
@@ -55,16 +54,11 @@
     input {}
 
     @media (min-width: $tablet) {
-
-      span {
-
-      }
-
+      span {}
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
 
       input {}
@@ -72,47 +66,35 @@
   }
 
   &__cat-weight {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__cat-age {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
@@ -125,70 +107,52 @@
   }
 
   &__cat-thin {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__cat-thick {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__cat-unknown {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
@@ -208,47 +172,35 @@
   }
 
   &__owner-email {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__owner-tel {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
@@ -261,16 +213,13 @@
   }
 
   &__comment-container {
-
     textarea {}
 
     @media (min-width: $tablet) {
-
       textarea {}
     }
 
     @media (min-width: $desktop) {
-
       textarea {}
     }
   }
@@ -290,99 +239,74 @@
   }
 
   &__addition-sugar {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__addition-water {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__addition-milk {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__addition-vito {
-
     span {
       @include font-label-name();
     }
-
     input {}
 
     @media (min-width: $tablet) {
-
       span {}
-
       input {}
     }
 
     @media (min-width: $desktop) {
-
       span {}
-
       input {}
     }
   }
 
   &__push {
-
     span {
       font-family: $add-font;
       font-size: 14px;
@@ -392,7 +316,6 @@
     }
 
     @media (min-width: $tablet) {
-
       span {
         font-size: 16px;
         line-height: 1;
@@ -400,7 +323,6 @@
     }
 
     @media (min-width: $desktop) {
-
       span {}
     }
   }

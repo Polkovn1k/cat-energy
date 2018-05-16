@@ -7,7 +7,6 @@
 *.sublime*
 Info.txt
 node_modules/
-build/
 layout/
 npm-debug.*
 Thumbs.db

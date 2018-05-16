@@ -24,7 +24,6 @@
     line-height: 1.25;
     font-weight: 400;
     text-transform: uppercase;
-
     a {
       color: $big-text;
     }
@@ -32,12 +31,10 @@
     @media (min-width: $tablet) {
       font-size: 20px;
       line-height: 1;
-
       a {}
     }
 
     @media (min-width: $desktop) {
-
       a {}
     }
   }
@@ -79,39 +76,30 @@
     line-height: 1.33;
     font-weight: 400;
     color: $small-text;
-
     tr {}
-
     td {}
 
     @media (min-width: $tablet) {
       font-size: 16px;
       line-height: 1;
-
       tr {}
-
       td {}
     }
 
     @media (min-width: $desktop) {
-
       tr {}
-
       td {}
     }
   }
 
   &__img {
-
     img {}
 
     @media (min-width: $tablet) {
-
       img {}
     }
 
     @media (min-width: $desktop) {
-
       img {}
     }
   }

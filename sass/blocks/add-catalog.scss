@@ -1,22 +1,14 @@
 .add-catalog {
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) {}
 
-  }
-
-  @media (min-width: $desktop) {
-
-  }
+  @media (min-width: $desktop) {}
 
   &__container {
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) {}
 
-    }
-
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 
   &__title {
@@ -30,31 +22,21 @@
       font-size: 36px;
     }
 
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 
   &__list {
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) {}
 
-    }
-
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 
   &__all {
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) {}
 
-    }
-
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 
   &__all-link {
@@ -64,12 +46,8 @@
     font-weight: 400;
     color: $white;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) {}
 
-    }
-
-    @media (min-width: $desktop) {
-
-    }
+    @media (min-width: $desktop) {}
   }
 }

@@ -5,20 +5,106 @@
   @media (min-width: $desktop) {}
 
   &__container {
+    @include container();
+    padding-bottom: 17px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      padding-bottom: 45px;
+    }
 
     @media (min-width: $desktop) {}
   }
 
   &__type {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 21px;
+    margin-bottom: 20px;
+    background: $silver-bg;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+      padding-top: 77px;
+      padding-bottom: 61px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__type:last-child {
+    margin-bottom: 0;
 
     @media (min-width: $tablet) {}
 
     @media (min-width: $desktop) {}
   }
 
+  &__type::before {
+    @include pseudo();
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $green;
+
+    @media (min-width: $tablet) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 61px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__type::after {
+    @include pseudo();
+    transform: scale(-1, 1);
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 50px;
+    background: url("../img/svg-bg/program--cat.svg") no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      width: 140px;
+      height: 194px;
+      top: 80px;
+      right: 92px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__type:last-child::after {
+    transform: none;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background: url("../img/svg-bg/program--panther.svg") no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      right: 29px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
   &__title {
+    @include field-reset();
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 32.5%;
     font-family: $main-font;
     font-size: 24px;
     line-height: 1.54;
@@ -27,6 +113,8 @@
     color: $big-text;
 
     @media (min-width: $tablet) {
+      padding-bottom: 25px;
+      padding-left: 7.5%;
       font-size: 36px;
       line-height: 1;
     }
@@ -35,6 +123,11 @@
   }
 
   &__text {
+    @include field-reset();
+    position: relative;
+    padding-right: 10.71%;
+    padding-bottom: 41px;
+    padding-left: 7.14%;
     font-family: $add-font;
     font-size: 14px;
     line-height: 1.29;
@@ -42,6 +135,8 @@
     color: $small-text;
 
     @media (min-width: $tablet) {
+      padding-right: 40%;
+      padding-bottom: 56px;
       font-size: 16px;
       line-height: 1.5;
     }
@@ -49,7 +144,34 @@
     @media (min-width: $desktop) {}
   }
 
+  &__text--mass {
+
+    @media (min-width: $tablet) {
+      padding-right: 44.7%;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__text::before {
+    @include pseudo();
+    bottom: 18px;
+    right: 7.14%;
+    left: 7.14%;
+    height: 1px;
+    background: transparentize($black, 0.9);
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
   &__link {
+    position: relative;
+    display: inline-block;
+    margin-left: 7.14%;
     font-family: $main-font;
     font-size: 16px;
     line-height: 1;
@@ -59,6 +181,39 @@
 
     @media (min-width: $tablet) {
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__link::before {
+    @include pseudo();
+    top: 7px;
+    right: -34px;
+    width: 21px;
+    height: 3px;
+    background: $add-color-1;
+
+    @media (min-width: $tablet) {
+      top: 9px;
+      right: -46px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__link::after {
+    @include pseudo();
+    top: 3px;
+    right: -42px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 6px solid $add-color-1;
+
+    @media (min-width: $tablet) {
+      top: 5px;
+      right: -54px;
     }
 
     @media (min-width: $desktop) {}

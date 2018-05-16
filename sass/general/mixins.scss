@@ -1,5 +1,6 @@
 @mixin container() {
   margin: 0 auto;
+  min-width: 320px;
   padding-right: $mobile-indent;
   padding-left: $mobile-indent;
 
@@ -13,6 +14,35 @@
     padding-right: $desktop-indent;
     padding-left: $desktop-indent;
   }
+}
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@mixin flex-row-s() {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flex-column-s() {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@mixin flex-element() {
+  display: block;
+  flex-shrink: 0;
 }
 
 @mixin field-reset() {
@@ -30,6 +60,13 @@
   content: "";
   position: absolute;
   display: block;
+}
+
+@mixin full-absolute() {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @mixin font-label-name() {

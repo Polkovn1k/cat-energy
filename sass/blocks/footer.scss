@@ -1,10 +1,13 @@
 .footer {
+  background: $silver-bg;
 
   @media (min-width: $tablet) {}
 
   @media (min-width: $desktop) {}
 
   &__container {
+    @include container();
+    padding-top: 39px;
 
     @media (min-width: $tablet) {}
 
@@ -12,6 +15,8 @@
   }
 
   &__logo {
+    padding-bottom: 31px;
+    text-align: center;
 
     @media (min-width: $tablet) {}
 
@@ -19,21 +24,22 @@
   }
 
   &__logo-link {
-
-    img {}
+    img {
+      width: 128px;
+      height: 24px;
+    }
 
     @media (min-width: $tablet) {
-
       img {}
     }
 
     @media (min-width: $desktop) {
-
       img {}
     }
   }
 
   &__dev {
+    padding-bottom: 23px;
 
     @media (min-width: $tablet) {}
 
@@ -41,28 +47,34 @@
   }
 
   &__dev-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
     font-family: $add-font;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
     color: $small-text;
+    span,
+    svg {
+      @include flex-element();
+    }
 
-    span {}
-
-    img {}
+    svg {
+      fill: $add-color-1;
+    }
 
     @media (min-width: $tablet) {
-
-      span {}
-
-      img {}
+      span,
+      svg {}
     }
 
     @media (min-width: $desktop) {
-
-      span {}
-
-      img {}
+      span,
+      svg {}
     }
   }
 }
