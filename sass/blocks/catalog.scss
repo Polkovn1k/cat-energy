@@ -1,21 +1,37 @@
 .catalog {
+  padding-top: 16px;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    padding-top: 48px;
+  }
 
-  @media (min-width: $desktop) {}
+  @media (min-width: $desktop) {
+    padding-top: 68px;
+  }
 
   &__title {
+    @include field-reset();
+    padding-bottom: 28px;
+    padding-left: 6.25%;
     font-family: $main-font;
     font-size: 36px;
     line-height: 1.67;
     font-weight: 400;
     color: $big-text;
+    border-bottom: 1px solid $add-color-4;
 
     @media (min-width: $tablet) {
+      padding-left: 3.9%;
+      padding-bottom: 62px;
       font-size: 60px;
       line-height: 1;
+      border-bottom: none;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 3.05%;
+    }
   }
 }

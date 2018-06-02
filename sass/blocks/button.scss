@@ -1,8 +1,8 @@
 .button {
   display: block;
   width: 100%;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   font-family: $main-font;
   font-size: 16px;
@@ -36,17 +36,33 @@
       order: 3;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      margin-left: 6.5%;
+    }
   }
 
   &--all {
     color: $add-color-2;
+    background: $silver-bg;
 
     @media (min-width: $tablet) {
+      margin-top: 61px;
       color: $small-text;
     }
 
     @media (min-width: $desktop) {}
+  }
+
+  &--add-product {
+
+    @media (min-width: $tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop) {
+      width: auto;
+      flex-grow: 1;
+    }
   }
 
   &--form {

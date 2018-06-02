@@ -1,10 +1,16 @@
 .main-catalog {
+  padding-bottom: 28px;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    padding-bottom: 30px;
+  }
 
-  @media (min-width: $desktop) {}
+  @media (min-width: $desktop) {
+    padding-bottom: 36px;
+  }
 
   &__container {
+    @include container();
 
     @media (min-width: $tablet) {}
 
@@ -28,15 +34,13 @@
   }
 
   &__list {
+    @include order-reset();
 
-    @media (min-width: $tablet) {}
-
-    @media (min-width: $desktop) {}
-  }
-
-  &__container {
-
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      @include flex-row-s();
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     @media (min-width: $desktop) {}
   }

@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+
+  &--index::before {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {
+      @include pseudo();
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: calc(50% - 40px);
+      min-height: 696px;
+      background: #63a73a url("../img/content/promo--bg-desktop@1x.jpg") no-repeat left top;
+      background-size: cover;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: #63a73a url("../img/content/promo--bg-desktop@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__container {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+}
+
+
+

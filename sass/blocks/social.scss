@@ -5,7 +5,11 @@
   border-top: 1px $add-color-3 solid;
   border-bottom: 1px $add-color-3 solid;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+  }
 
   @media (min-width: $desktop) {}
 
@@ -19,7 +23,11 @@
     max-width: 280px;
     padding-right: 10px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      width: 144px;
+      padding: 0;
+      padding-left: 20px;
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -40,6 +48,54 @@
     }
 
     @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__item-link--vk {
+    svg {
+      width: 22px;
+      height: 12px;
+    }
+
+    @media (min-width: $tablet) {
+      svg {
+      width: 30px;
+      height: 16px;
+    }
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__item-link--inst {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $tablet) {
+      svg {
+      width: 23px;
+      height: 23px;
+    }
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__item-link--fb {
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+
+    @media (min-width: $tablet) {
+      svg {
+      width: 14px;
+      height: 28px;
+    }
+    }
 
     @media (min-width: $desktop) {}
   }

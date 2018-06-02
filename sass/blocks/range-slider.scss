@@ -1,8 +1,18 @@
 .range-slider {
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding-top: 86px;
+    z-index: 10;
+  }
 
-  @media (min-width: $desktop) {}
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -141px;
+    right: 0;
+    width: auto;
+
+  }
 
   &__img {
     text-align: center;
@@ -10,14 +20,23 @@
     margin-left: -20px;
     padding-bottom: 31px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      margin-right: 0;
+      margin-left: 0;
+      padding-bottom: 18px;
+      padding-left: 13px;
+    }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      padding-bottom: 39px;
+    }
   }
 
   &__img-before {
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -35,11 +54,19 @@
     justify-content: center;
     margin: 0 auto;
     width: 75%;
-    max-width: 320px;
+    max-width: 290px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      width: 82.2%;
+      max-width: 582px;
+    }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      margin-right: 0;
+      margin-left: 12.6%;
+      max-width: 578px;
+
+    }
   }
 
   &__direction {
@@ -54,6 +81,8 @@
     color: $big-text;
 
     @media (min-width: $tablet) {
+      padding-bottom: 6px;
+      border-bottom: 1px dotted $add-color-3;
       font-size: 20px;
       line-height: 1;
     }

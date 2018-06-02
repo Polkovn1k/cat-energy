@@ -5,7 +5,12 @@ $desktop-indent: 40px;
 
 // Grid - breakpoints
 $tablet: 768px;
+$max-tablet: 1299px;
 $desktop: 1300px;
+
+// Grid-add - breakpoints
+$max-tablet: 1299px;
+$catalog-tablet: 1152px;
 
 // Fonts
 $main-font: "Oswald", "Arial", sans-serif;
@@ -22,4 +27,6 @@ $small-border: #cdcdcd;
 $add-color-1: #666666;
 $add-color-2: #222222;
 $add-color-3: #d9d9d9;
+$add-color-4: #eaeaea;
+$add-color-5: #222222;
 $transparent: transparent;

@@ -5,6 +5,9 @@
   @media (min-width: $desktop) {}
 
   &__cat {
+    @include field-reset();
+    padding-bottom: 28px;
+    border: none;
 
     @media (min-width: $tablet) {}
 
@@ -12,11 +15,19 @@
   }
 
   &__title {
+    @include container();
+    width: 100%;
+    position: relative;
+    margin: 0;
     font-family: $main-font;
     font-size: 24px;
     line-height: 1;
     font-weight: 400;
     color: $big-text;
+    span {
+      display: inline;
+      background: $white;
+    }
 
     @media (min-width: $tablet) {
       font-size: 36px;
@@ -25,7 +36,22 @@
     @media (min-width: $desktop) {}
   }
 
+  &__title::before {
+    @include pseudo();
+    z-index: -1;
+    top: 14px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: $green;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
   &__cat-container {
+    @include container();
 
     @media (min-width: $tablet) {}
 
@@ -40,6 +66,21 @@
   }
 
   &__cat-inputs {
+    @include flex-column;
+    position: relative;
+    padding-bottom: 25px;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-inputs::after {
+    @include pseudo();
+    right: -20px;
+    bottom: 0;
+    left: -20px;
+    border-bottom: 1px solid transparentize($small-border, 0.5);
 
     @media (min-width: $tablet) {}
 
@@ -47,11 +88,25 @@
   }
 
   &__cat-name {
+    @include flex-row-s;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
     span {
+      @include flex-element();
       @include font-label-name();
+      padding-right: 15px;
     }
-
-    input {}
+    input {
+      @include flex-element();
+      flex-grow: 1;
+      padding-top: 11px;
+      padding-right: 13px;
+      padding-bottom: 11px;
+      padding-left: 13px;
+      text-transform: uppercase;
+      bottom: 1px solid transparentize($small-border, 0.5);
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -60,16 +115,29 @@
 
     @media (min-width: $desktop) {
       span {}
-
       input {}
     }
   }
 
   &__cat-weight {
+    @include flex-row-s;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
     span {
+      @include flex-element();
       @include font-label-name();
+      padding-right: 18px;
     }
-    input {}
+    input {
+      @include flex-element();
+      flex-grow: 1;
+      padding-top: 11px;
+      padding-right: 13px;
+      padding-bottom: 11px;
+      padding-left: 13px;
+      text-transform: uppercase;
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -83,10 +151,23 @@
   }
 
   &__cat-age {
+    @include flex-row-s;
+    align-items: center;
+    width: 100%;
     span {
+      @include flex-element();
       @include font-label-name();
+      padding-right: 16px;
     }
-    input {}
+    input {
+      @include flex-element();
+      flex-grow: 1;
+      padding-top: 11px;
+      padding-right: 13px;
+      padding-bottom: 11px;
+      padding-left: 13px;
+      text-transform: uppercase;
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -100,6 +181,22 @@
   }
 
   &__radio {
+    @include flex-column;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 21px;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__radio::after {
+    @include pseudo();
+    right: -20px;
+    bottom: 0;
+    left: -20px;
+    border-bottom: 1px solid transparentize($small-border, 0.5);
 
     @media (min-width: $tablet) {}
 
@@ -107,10 +204,18 @@
   }
 
   &__cat-thin {
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 46px;
     span {
       @include font-label-name();
+      position: relative;
+      cursor: pointer;
     }
-    input {}
+    input {
+      display: none;
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -124,10 +229,18 @@
   }
 
   &__cat-thick {
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 46px;
     span {
       @include font-label-name();
+      position: relative;
+      cursor: pointer;
     }
-    input {}
+    input {
+      display: none;
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -141,10 +254,17 @@
   }
 
   &__cat-unknown {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 46px;
     span {
       @include font-label-name();
+      position: relative;
+      cursor: pointer;
     }
-    input {}
+    input {
+      display: none;
+    }
 
     @media (min-width: $tablet) {
       span {}
@@ -157,7 +277,38 @@
     }
   }
 
+  &__cat-thin,
+  &__cat-thick,
+  &__cat-unknown {
+    span::before {
+      @include pseudo();
+      top: -3px;
+      left: -46px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $small-border;
+    }
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__cat-thin input[type="radio"]:checked,
+  &__cat-thick input[type="radio"]:checked,
+  &__cat-unknown input[type="radio"]:checked {
+    ~ span::before {
+      background-image: radial-gradient(circle, $green 30%, $transparent 30%);
+    }
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
   &__owner {
+    @include field-reset();
+    border: none;
 
     @media (min-width: $tablet) {}
 
@@ -165,6 +316,7 @@
   }
 
   &__owner-container {
+    @include container();
 
     @media (min-width: $tablet) {}
 
@@ -206,6 +358,8 @@
   }
 
   &__comment {
+    @include field-reset();
+    border: none;
 
     @media (min-width: $tablet) {}
 
@@ -213,6 +367,7 @@
   }
 
   &__comment-container {
+    @include container();
     textarea {}
 
     @media (min-width: $tablet) {
@@ -225,6 +380,8 @@
   }
 
   &__addition {
+    @include field-reset();
+    border: none;
 
     @media (min-width: $tablet) {}
 

@@ -16,7 +16,10 @@
       padding-bottom: 1px;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      padding-top: 102px;
+      padding-bottom: 56px;
+    }
   }
 
   &__container::before {
@@ -62,7 +65,10 @@
       order: 1;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      width: 50%;
+      padding-left: 6.5%;
+    }
   }
 
   &__text {
@@ -89,7 +95,10 @@
       order: 2;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      padding-bottom: 53px;
+      padding-left: 6.5%;
+    }
   }
 
   &__img {
@@ -100,11 +109,15 @@
     img {}
 
     @media (min-width: $tablet) {
+      width: 100%;
       margin-top: -76px;
       padding-bottom: 0;
       order: 4;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      margin-top: -367px;
+      padding-left: 18.85%;
+    }
   }
 }

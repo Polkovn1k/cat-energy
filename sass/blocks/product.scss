@@ -1,24 +1,118 @@
 .product {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  border-bottom: 1px solid $add-color-4;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    width: 324px;
+    margin-right: 60px;
+    margin-bottom: 37px;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 37px;
+    border-bottom: none;
+    background: linear-gradient(to bottom, $white 103px, $silver-bg 103px);
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  &:nth-child(2n) {
+
+    @media (min-width: $tablet) {
+      margin-right: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 80px;
+    }
+  }
+
+  &:nth-child(4n) {
+
+    @media (min-width: $tablet) {
+
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $catalog-tablet) and (max-width: $max-tablet) {
+    &:nth-child(2n) {
+      margin-right: 60px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &--all {
+
+    @media (min-width: $tablet) {
+      position: relative;
+      background: $white;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &--all::before {
+
+    @media (min-width: $tablet) {
+      @include pseudo();
+      top: 103px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid transparentize($small-border, 0.5);
+    }
+
+    @media (min-width: $desktop) {}
+  }
 
   @media (min-width: $desktop) {}
 
   &__container {
+    @include flex-column-s();
+    position: relative;
+    padding-top: 21px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      align-items: center;
+      padding-top: 0;
+    }
 
     @media (min-width: $desktop) {}
   }
 
   &__container--all {
+    padding-top: 80px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      padding-top: 247px;
+    }
 
     @media (min-width: $desktop) {}
   }
 
   &__title {
+    @include field-reset();
+    @include flex-element();
+    padding-bottom: 12px;
+    padding-left: 49.7%;
     font-family: $main-font;
     font-size: 16px;
     line-height: 1.25;
@@ -27,76 +121,166 @@
     a {
       color: $big-text;
     }
+    span {
+      display: block;
+    }
 
     @media (min-width: $tablet) {
+      width: 55%;
+      padding-bottom: 18px;
+      padding-left: 0;
+      text-align: center;
       font-size: 20px;
       line-height: 1;
       a {}
+      span {
+        display: inline;
+      }
     }
 
     @media (min-width: $desktop) {
+      width: 85%;
       a {}
+      span {}
     }
   }
 
   &__title-all {
+    @include field-reset();
+    position: relative;
+    padding-bottom: 8px;
     font-family: $main-font;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
     color: $big-text;
 
     @media (min-width: $tablet) {
+      width: 70%;
+      padding-bottom: 25px;
       font-size: 20px;
       line-height: 1;
     }
 
+    @media (min-width: $desktop) {
+      width: 90%;
+    }
+  }
+
+  &__title-all::before {
+    @include pseudo();
+    top: -40px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    transform: translateX(-50%);
+    background: transparentize($add-color-5, 0.8);
+
+    @media (min-width: $tablet) {
+      top: -80px;
+      width: 60px;
+    }
+
     @media (min-width: $desktop) {}
   }
 
-  &__trext-all {
+  &__title-all::after {
+    @include pseudo();
+    top: -54px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    transform: translateX(-50%);
+    background: transparentize($add-color-5, 0.8);
+
+    @media (min-width: $tablet) {
+      top: -109px;
+      height: 60px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__text-all {
+    @include field-reset();
+    padding-bottom: 21px;
     font-family: $add-font;
     font-size: 12px;
     line-height: 1.33;
     font-weight: 400;
+    text-align: center;
     color: $small-text;
 
     @media (min-width: $tablet) {
+      width: 70%;
       font-size: 16px;
       line-height: 1.25;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      width: 100%;
+    }
   }
 
   &__property {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    margin-left: 49.7%;
+    border-collapse: collapse;
     font-family: $add-font;
     font-size: 12px;
     line-height: 1.33;
     font-weight: 400;
     color: $small-text;
-    tr {}
-    td {}
+    td {
+      width: 50%;
+    }
+    td:last-child {
+      text-align: right;
+    }
 
     @media (min-width: $tablet) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 33px;
       font-size: 16px;
       line-height: 1;
-      tr {}
-      td {}
+      td {
+        padding-top: 8px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid $small-border;
+      }
     }
 
     @media (min-width: $desktop) {
-      tr {}
-      td {}
     }
   }
 
   &__img {
-    img {}
+    margin-top: -144px;
+    width: 49%;
+    text-align: center;
+    img {
+      max-width: none;
+      width: 140px;
+    }
 
     @media (min-width: $tablet) {
-      img {}
+      display: flex;
+      align-items: flex-end;
+      margin-top: 0;
+      margin-right: -37px;
+      margin-bottom: 39px;
+      margin-left: -37px;
+      width: auto;
+      min-height: 208px;
+      order: -1;
+      img {
+        max-width: 100%;
+        width: auto;
+      }
     }
 
     @media (min-width: $desktop) {

@@ -9,16 +9,26 @@
     @include container();
     padding-top: 39px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      @include flex-row();
+      justify-content: space-between;
+      padding-top: 60px;
+      padding-bottom: 44px;
+    }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      padding-bottom: 55px;
+    }
   }
 
   &__logo {
     padding-bottom: 31px;
     text-align: center;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      padding-bottom: 0;
+      padding-top: 4px;
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -26,11 +36,12 @@
   &__logo-link {
     img {
       width: 128px;
-      height: 24px;
     }
 
     @media (min-width: $tablet) {
-      img {}
+      img {
+
+      }
     }
 
     @media (min-width: $desktop) {
@@ -41,9 +52,14 @@
   &__dev {
     padding-bottom: 23px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      padding-bottom: 0;
+      padding-top: 9px;
+    }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      padding-top: 0;
+    }
   }
 
   &__dev-link {
@@ -62,14 +78,15 @@
     svg {
       @include flex-element();
     }
-
     svg {
       fill: $add-color-1;
     }
 
     @media (min-width: $tablet) {
-      span,
-      svg {}
+      justify-content: flex-start;
+      svg {
+        margin-left: 23px;
+      }
     }
 
     @media (min-width: $desktop) {

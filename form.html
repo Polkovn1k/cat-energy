@@ -40,7 +40,7 @@
       <p class="program-form__text">заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru/" name="form" method="post" class="form">
         <fieldset class="form__cat">
-          <legend class="form__title visually-hidden">Контактные данные кота</legend>
+          <legend class="form__title visually-hidden"><span>Контактные данные кота</span></legend>
           <div class="form__cat-container form__cat-container--none">
             <div class="form__cat-inputs">
               <label class="form__cat-name">
@@ -52,28 +52,28 @@
                 <input type="number" name="cat-weight" placeholder="7">
               </label>
               <label class="form__cat-age">
-                <span>возраст (лет):<sup>*</sup></span>
+                <span>возраст (лет):</span>
                 <input type="number" name="cat-age" placeholder="7">
               </label>
             </div>
             <div class="form__radio">
               <label class="form__cat-thin">
+                <input type="radio" name="cat-radio" checked>
                 <span>похудение</span>
-                <input type="radio" name="cat-radio">
               </label>
               <label class="form__cat-thick">
-                <span>набор массы</span>
                 <input type="radio" name="cat-radio">
+                <span>набор массы</span>
               </label>
               <label class="form__cat-unknown">
-                <span>не знаю (нужен ваш совет)</span>
                 <input type="radio" name="cat-radio">
+                <span>не знаю (нужен ваш совет)</span>
               </label>
             </div>
           </div>
         </fieldset>
         <fieldset class="form__owner">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
+          <legend class="form__title"><span>Контактные данные (владельца кота)</span></legend>
           <div class="form__owner-container">
             <label class="form__owner-email">
               <span>e-mail:<sup>*</sup></span>
@@ -86,13 +86,13 @@
           </div>
         </fieldset>
         <fieldset class="form__comment">
-          <legend class="form__title">Комментарий</legend>
+          <legend class="form__title"><span>Комментарий</span></legend>
           <div class="form__comment-container">
             <textarea name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__addition">
-          <legend class="form__title">Дополнительно</legend>
+          <legend class="form__title"><span>Дополнительно</span></legend>
           <div class="form__addition-container">
             <label class="form__addition-sugar">
               <span>сахарозаменитель</span>
@@ -121,10 +121,12 @@
     <section class="contacts">
       <div class="contacts__container">
         <address class="contacts__address">
-          <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
-          <p class="contacts__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <span class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</span>
+          <p class="contacts__location">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </address>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124161!2d30.32089461631194!3d59.93879686904762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525805344184" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -142,7 +144,7 @@
           <li class="social__item">
             <a href="vk.com" class="social__item-link social__item-link--vk">
               Мы в VK
-              <svg width="22" height="12" aria-hidden="true" role="presentation">
+              <svg aria-hidden="true" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--vk"></use>
               </svg>
             </a>
@@ -150,7 +152,7 @@
           <li class="social__item">
             <a href="instagram.com" class="social__item-link social__item-link--inst">
             Мы в Instagram
-            <svg width="16" height="16" aria-hidden="true" role="presentation">
+            <svg aria-hidden="true" role="presentation">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--inst"></use>
             </svg>
           </a>
@@ -158,7 +160,7 @@
           <li class="social__item">
             <a href="facebook.com" class="social__item-link social__item-link--fb">
               Мы в Facebook
-              <svg width="10" height="19" aria-hidden="true" role="presentation">
+              <svg aria-hidden="true" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social--fb"></use>
               </svg>
             </a>

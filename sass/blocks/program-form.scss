@@ -1,10 +1,15 @@
 .program-form {
+  padding-top: 16px;
 
   @media (min-width: $tablet) {}
 
   @media (min-width: $desktop) {}
 
   &__title {
+    @include field-reset();
+    padding-right: $mobile-indent;
+    padding-bottom: 25px;
+    padding-left: $mobile-indent;
     font-family: $main-font;
     font-size: 36px;
     line-height: 1.67;
@@ -20,6 +25,11 @@
   }
 
   &__text {
+    @include field-reset();
+    width: 90%;
+    padding-right: $mobile-indent;
+    padding-bottom: 39px;
+    padding-left: $mobile-indent;
     font-family: $main-font;
     font-size: 14px;
     line-height: 1.29;
