@@ -1,9 +1,16 @@
 .program-form {
   padding-top: 16px;
+  padding-bottom: 32px;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    padding-top: 47px;
+    padding-bottom: 72px;
+  }
 
-  @media (min-width: $desktop) {}
+  @media (min-width: $desktop) {
+    padding-top: 68px;
+    padding-bottom: 82px;
+  }
 
   &__title {
     @include field-reset();
@@ -15,19 +22,38 @@
     line-height: 1.67;
     font-weight: 400;
     color: $big-text;
-
-    @media (min-width: $tablet) {
-      font-size: 60px;
-      line-height: 1;
+    span {
+      @include max-mobile();
+      display: block;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-bottom: 56px;
+      padding-right: $tablet-indent;
+      padding-left: $tablet-indent;
+      font-size: 60px;
+      line-height: 1;
+      span {
+        @include max-tablet();
+      }
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-right: $desktop-indent;
+      padding-left: $desktop-indent;
+      span {
+        max-width: none;
+      }
+    }
   }
 
   &__text {
     @include field-reset();
-    width: 90%;
-    padding-right: $mobile-indent;
+    @include max-mobile(540px);
+    padding-right: 30px;
     padding-bottom: 39px;
     padding-left: $mobile-indent;
     font-family: $main-font;
@@ -38,10 +64,20 @@
     color: $big-text;
 
     @media (min-width: $tablet) {
+      @include max-tablet(980px);
+      padding-right: 320px;
+      padding-bottom: 66px;
+      padding-left: 70px;
       font-size: 20px;
       line-height: 1.5;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      width: 100%;
+      @include max-desktop();
+      padding-right: 910px;
+      padding-bottom: 65px;
+      padding-left: $desktop-indent;
+    }
   }
 }

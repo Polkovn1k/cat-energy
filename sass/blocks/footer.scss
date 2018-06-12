@@ -17,6 +17,7 @@
     }
 
     @media (min-width: $desktop) {
+      @include max-desktop();
       padding-bottom: 55px;
     }
   }

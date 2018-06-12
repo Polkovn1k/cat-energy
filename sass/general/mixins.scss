@@ -10,10 +10,27 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 1300px;
     padding-right: $desktop-indent;
     padding-left: $desktop-indent;
   }
+}
+
+@mixin max-mobile($max-mobile: 500px, $margin-auto: auto) {
+  max-width: $max-mobile;
+  margin-right: $margin-auto;
+  margin-left: $margin-auto;
+}
+
+@mixin max-tablet($max-tablet: 840px, $margin-auto: auto) {
+  max-width: $max-tablet;
+  margin-right: $margin-auto;
+  margin-left: $margin-auto;
+}
+
+@mixin max-desktop($max-desktop: 1300px, $margin-auto: auto) {
+  max-width: $max-desktop;
+  margin-right: $margin-auto;
+  margin-left: $margin-auto;
 }
 
 @mixin flex-row() {
@@ -82,7 +99,5 @@
     line-height: 1;
   }
 
-  @media (min-width: $desktop) {
-
-  }
+  @media (min-width: $desktop) {}
 }

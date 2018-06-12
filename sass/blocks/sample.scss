@@ -27,12 +27,14 @@
 
   &__container {
     @include container();
+    @include max-mobile(540px);
     padding-top: 17px;
     padding-bottom: 35px;
 
     @media (min-width: $tablet) {
-      position: relative;
       @include flex-row();
+      @include max-tablet();
+      position: relative;
       flex-wrap: wrap;
       padding-top: 43px;
       padding-bottom: 68px;
@@ -40,6 +42,7 @@
 
     @media (min-width: $desktop) {
       @include flex-column();
+      @include max-desktop();
       padding-top: 0;
       padding-bottom: 75px;
     }

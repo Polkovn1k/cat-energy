@@ -36,12 +36,14 @@
   </header>
   <main class="main">
     <section class="program-form">
-      <h1 class="program-form__title">Подбор программы</h1>
+      <h1 class="program-form__title">
+        <span>Подбор программы</span>
+      </h1>
       <p class="program-form__text">заполните анкету и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru/" name="form" method="post" class="form">
         <fieldset class="form__cat">
           <legend class="form__title visually-hidden"><span>Контактные данные кота</span></legend>
-          <div class="form__cat-container form__cat-container--none">
+          <div class="form__cat-container">
             <div class="form__cat-inputs">
               <label class="form__cat-name">
                 <span>имя:<sup>*</sup></span>
@@ -73,15 +75,21 @@
           </div>
         </fieldset>
         <fieldset class="form__owner">
-          <legend class="form__title"><span>Контактные данные (владельца кота)</span></legend>
+          <legend class="form__title"><span>Контактные данные<br> (владельца кота)</span></legend>
           <div class="form__owner-container">
             <label class="form__owner-email">
               <span>e-mail:<sup>*</sup></span>
               <input type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+              <svg aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#form--mail"></use>
+              </svg>
             </label>
             <label class="form__owner-tel">
               <span>телефон:<sup>*</sup></span>
               <input type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+              <svg aria-hidden="true" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#form--phone"></use>
+              </svg>
             </label>
           </div>
         </fieldset>
@@ -92,23 +100,23 @@
           </div>
         </fieldset>
         <fieldset class="form__addition">
-          <legend class="form__title"><span>Дополнительно</span></legend>
+          <legend class="form__title form__title--addition"><span>Дополнительно</span></legend>
           <div class="form__addition-container">
             <label class="form__addition-sugar">
-              <span>сахарозаменитель</span>
               <input type="checkbox" name="addition-sugar" checked>
+              <span>сахарозаменитель</span>
             </label>
             <label class="form__addition-water">
-              <span>питьевая вода</span>
               <input type="checkbox" name="addition-water">
+              <span>питьевая вода</span>
             </label>
             <label class="form__addition-milk">
-              <span>молоко</span>
               <input type="checkbox" name="addition-milk">
+              <span>молоко</span>
             </label>
             <label class="form__addition-vito">
-              <span>витамины</span>
               <input type="checkbox" name="addition-vitamin">
+              <span>витамины</span>
             </label>
           </div>
         </fieldset>
@@ -118,7 +126,7 @@
         </div>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--silver">
       <div class="contacts__container">
         <address class="contacts__address">
           <span class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</span>

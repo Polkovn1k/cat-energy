@@ -14,7 +14,9 @@
 
     @media (min-width: $tablet) {}
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      @include max-desktop();
+    }
   }
 
   &__title {
@@ -38,10 +40,19 @@
 
     @media (min-width: $tablet) {
       @include flex-row-s();
+      @include max-tablet();
       justify-content: center;
       flex-wrap: wrap;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      max-width: none;
+    }
+  }
+
+  @media (min-width: $catalog-tablet) and (max-width: $max-tablet) {
+    &__list {
+      max-width: none;
+    }
   }
 }

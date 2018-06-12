@@ -4,6 +4,7 @@
   border-bottom: 1px solid $small-border;
 
   @media (min-width: $tablet) {
+    @include max-tablet();
     padding-top: 25px;
     padding-right: 37px;
     padding-bottom: 27px;
@@ -14,6 +15,7 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: none;
     padding-top: 15px;
     padding-right: 0;
     padding-bottom: 16px;
@@ -23,6 +25,8 @@
   }
 
   &:first-child {
+    border-top: 1px solid $small-border;
+
     @media (min-width: $tablet) {}
 
     @media (min-width: $desktop) {
@@ -31,10 +35,12 @@
   }
 
   &__container {
+    @include max-mobile();
 
     @media (min-width: $tablet) {
       @include flex-row();
       flex-wrap: wrap;
+      max-width: none;
     }
 
     @media (min-width: $desktop) {}

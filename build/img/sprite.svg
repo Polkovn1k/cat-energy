@@ -10,7 +10,9 @@
 		<rect width="22.987" height="23"/>
 	
 		<rect width="30.003" height="15.759"/>
-	</defs><symbol id="program--cat" viewBox="0 0 367.603 512">
+	</defs><symbol id="form--tick" viewBox="0 0 21.1 15.513">
+<polygon fill="#68b738" points="20.074,0 7.729,13.304 1.025,6.08 0,7.185 7.625,15.404 7.728,15.513 7.729,15.513 20.997,1.215 21.1,1.104 "/>
+</symbol><symbol id="program--cat" viewBox="0 0 367.603 512">
 <g>
 	
 	<path d="M79.587,0h2c3.575,1.857,5.713,4.978,7.548,8.416c3.078,5.771,5.272,11.898,6.915,18.179
@@ -88,7 +90,7 @@
 </g>
 </symbol><symbol id="form--mail" viewBox="0 0 17 13">
 <path d="M15.6,5.8V11.6H1.4V5.8H0V13h17V5.8H15.6z M1.4,1.6V1.4h14.2V1.6L8.5,7.5L1.4,1.6z M0,0v2.299L8.5,9.4L17,2.299V0H0z"/>
-</symbol><symbol id="form--phonel" viewBox="0 0 19.955 19.925">
+</symbol><symbol id="form--phone" viewBox="0 0 19.955 19.925">
 <g>
 	
 	<path d="M17.906,9.405h-8.5v1.2h8.5l-2.102,2.1l0.901,0.9l3.099-3.101c0.201-0.2,0.201-0.6,0-0.9
