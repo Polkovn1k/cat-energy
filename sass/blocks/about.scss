@@ -193,8 +193,7 @@
     &__item::after {
 
       @media (min-width: $tablet) {
-        position: absolute;
-        display: block;
+        @include pseudo();
         top: -40px;
         left: 115px;
         z-index: -1;

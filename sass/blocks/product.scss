@@ -231,7 +231,7 @@
   }
 
   &__property {
-    flex-shrink: 0;
+    @include flex-element(table)
     max-width: 180px;
     margin-bottom: 20px;
     margin-left: 49.7%;

@@ -57,9 +57,9 @@
   align-items: stretch;
 }
 
-@mixin flex-element() {
-  display: block;
-  flex-shrink: 0;
+@mixin flex-element($element-display: block, $element-shrink: 0) {
+  display: $element-display;
+  flex-shrink: $element-shrink;
 }
 
 @mixin field-reset() {

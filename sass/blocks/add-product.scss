@@ -84,10 +84,9 @@
     color: $small-text;
 
     @media (min-width: $tablet) {
-      display: flex;
+      @include flex-element(flex)
       padding-top: 4px;
       padding-bottom: 22px;
-      flex-shrink: 0;
       width: 50%;
       font-size: 16px;
       line-height: 1.25;

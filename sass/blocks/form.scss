@@ -25,10 +25,14 @@
     position: relative;
     padding-bottom: 34px;
     font-family: $main-font;
-    font-size: 24px;
     line-height: 1;
+    font-size: 24px;
     font-weight: 400;
     color: $big-text;
+    @-moz-document url-prefix() {
+      margin: 0 0 0 50%;
+      transform: translateX(-50%);
+    }
     span {
       display: inline-block;
       margin-left: -22px;
@@ -43,6 +47,10 @@
       padding-bottom: 76px;
       padding-left: 29px;
       font-size: 36px;
+      @-moz-document url-prefix() {
+        margin: 0 0 0 50%;
+        transform: translateX(-50%);
+      }
       span {
         margin-left: 0;
         padding-right: 41px;
@@ -58,6 +66,10 @@
       margin: 0 auto;
       padding-right: $desktop-indent;
       padding-left: $desktop-indent;
+      @-moz-document url-prefix() {
+        margin: 0 0 0 50%;
+        transform: translateX(-50%);
+      }
       span {
         margin-left: -41px;
       }
@@ -67,7 +79,7 @@
   &__title--addition {
 
     @media (min-width: $tablet) {
-      padding-bottom: 59px;
+      padding-bottom: 58px;
     }
 
     @media (min-width: $desktop) {}
@@ -110,7 +122,7 @@
     @include flex-column;
     @include max-mobile();
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 
     @media (min-width: $tablet) {
       @include max-tablet();
@@ -143,7 +155,7 @@
     @include flex-row-s;
     align-items: center;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     span {
       @include flex-element();
       @include font-label-name();
@@ -152,11 +164,13 @@
     input {
       @include flex-element();
       flex-grow: 1;
-      padding-top: 11px;
+      min-height: 45px;
+      padding-top: 12px;
       padding-right: 13px;
-      padding-bottom: 11px;
+      padding-bottom: 13px;
       padding-left: 13px;
       text-transform: uppercase;
+      border: 1px solid transparentize($small-border, 0.5);
     }
 
     @media (min-width: $tablet) {
@@ -165,11 +179,11 @@
         padding-right: 19px;
       }
       input {
-        padding-top: 9px;
-        padding-bottom: 9px;
+        max-height: 52px;
+        padding-top: 13px;
+        padding-bottom: 14px;
         padding-left: 17px;
         font-size: 20px;
-        line-height: 1;
       }
     }
 
@@ -183,7 +197,7 @@
     @include flex-row-s;
     align-items: center;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     span {
       @include flex-element();
       @include font-label-name();
@@ -192,11 +206,13 @@
     input {
       @include flex-element();
       flex-grow: 1;
-      padding-top: 11px;
+      min-height: 45px;
+      padding-top: 12px;
       padding-right: 13px;
-      padding-bottom: 11px;
+      padding-bottom: 13px;
       padding-left: 13px;
       text-transform: uppercase;
+      border: 1px solid transparentize($small-border, 0.5);
     }
 
     @media (min-width: $tablet) {
@@ -205,11 +221,11 @@
         padding-right: 23px;
       }
       input {
-        padding-top: 9px;
-        padding-bottom: 9px;
+        max-height: 52px;
+        padding-top: 13px;
+        padding-bottom: 14px;
         padding-left: 17px;
         font-size: 20px;
-        line-height: 1;
       }
     }
 
@@ -231,11 +247,13 @@
     input {
       @include flex-element();
       flex-grow: 1;
-      padding-top: 11px;
+      min-height: 45px;
+      padding-top: 12px;
       padding-right: 13px;
-      padding-bottom: 11px;
+      padding-bottom: 13px;
       padding-left: 13px;
       text-transform: uppercase;
+      border: 1px solid transparentize($small-border, 0.5);
     }
 
     @media (min-width: $tablet) {
@@ -243,11 +261,11 @@
         padding-right: 19px;
       }
       input {
-        padding-top: 9px;
-        padding-bottom: 9px;
+        max-height: 52px;
+        padding-top: 13px;
+        padding-bottom: 14px;
         padding-left: 17px;
         font-size: 20px;
-        line-height: 1;
       }
     }
 
@@ -275,7 +293,7 @@
     @media (min-width: $desktop) {
       flex-grow: 1;
       max-width: none;
-      padding-bottom: 0;
+      padding-bottom: 27px;
     }
   }
 
@@ -300,6 +318,7 @@
   }
 
   &__cat-thin {
+    @include flex-element();
     margin-bottom: 10px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -327,6 +346,7 @@
   }
 
   &__cat-thick {
+    @include flex-element();
     margin-bottom: 10px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -354,6 +374,7 @@
   }
 
   &__cat-unknown {
+    @include flex-element();
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
@@ -466,11 +487,13 @@
     input {
       @include flex-element();
       flex-grow: 1;
-      padding-top: 11px;
+      min-height: 45px;
+      padding-top: 12px;
       padding-right: 13px;
-      padding-bottom: 12px;
+      padding-bottom: 13px;
       padding-left: 13px;
       text-transform: uppercase;
+      border: 1px solid transparentize($small-border, 0.5);
     }
     svg {
       position: absolute;
@@ -487,11 +510,11 @@
         padding-right: 22px;
       }
       input {
-        padding-top: 9px;
-        padding-bottom: 9px;
+        max-height: 52px;
+        padding-top: 13px;
+        padding-bottom: 14px;
         padding-left: 19px;
         font-size: 20px;
-        line-height: 1;
       }
       svg {
         top: 20px;
@@ -500,6 +523,8 @@
     }
 
     @media (min-width: $desktop) {
+      flex-basis: 100%;
+      max-width: 570px;
       flex-grow: 1;
       margin-right: 80px;
       margin-bottom: 0;
@@ -524,11 +549,13 @@
     input {
       @include flex-element();
       flex-grow: 1;
-      padding-top: 11px;
+      min-height: 45px;
+      padding-top: 12px;
       padding-right: 13px;
-      padding-bottom: 12px;
+      padding-bottom: 13px;
       padding-left: 13px;
       text-transform: uppercase;
+      border: 1px solid transparentize($small-border, 0.5);
     }
     svg {
       position: absolute;
@@ -544,11 +571,11 @@
         padding-right: 16px;
       }
       input {
-        padding-top: 9px;
-        padding-bottom: 9px;
+        max-height: 52px;
+        padding-top: 13px;
+        padding-bottom: 14px;
         padding-left: 18px;
         font-size: 20px;
-        line-height: 1;
       }
       svg {
         top: 17px;
@@ -557,6 +584,8 @@
     }
 
     @media (min-width: $desktop) {
+      flex-basis: auto;
+      max-width: 570px;
       flex-grow: 1;
       span {}
       input {}
@@ -590,6 +619,7 @@
       padding: 13px;
       text-transform: uppercase;
       resize: vertical;
+      border: 1px solid transparentize($small-border, 0.5);
     }
 
     @media (min-width: $tablet) {
@@ -618,19 +648,20 @@
     border: none;
 
     @media (min-width: $tablet) {
-      padding-bottom: 57px;
+      padding-bottom: 58px;
     }
 
     @media (min-width: $desktop) {
-      padding-bottom: 64px;
+      padding-bottom: 65px;
     }
   }
 
   &__addition-container {
     @include container();
-    @include flex-column;
+    @include flex-column();
     @include max-mobile(540px);
     label {
+      @include flex-element();
       margin-bottom: 10px;
     }
     label:last-child {
@@ -666,8 +697,6 @@
         margin-right: 6.56%;
         width: 20.08%;
         max-width: none;
-        flex-grow: 0;
-        flex-shrink: 0;
       }
       label:nth-child(4n) {
         margin-right: 0;
@@ -842,7 +871,6 @@
         @include flex-element();
         padding-top: 17px;
         font-size: 16px;
-        line-height: 1;
       }
     }
 
@@ -853,6 +881,7 @@
       padding-left: $desktop-indent;
       span {
         flex-grow: 1;
+        flex-basis: 100%;
         max-width: 568px;
         text-align: left;
       }
