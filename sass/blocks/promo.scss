@@ -109,18 +109,30 @@
     z-index: 1;
     padding-bottom: 3px;
     text-align: center;
-    img {}
+    img {
+      display: inline-block;
+      width: 280px;
+      height: 281px;
+    }
 
     @media (min-width: $tablet) {
       width: 100%;
       margin-top: -76px;
       padding-bottom: 0;
       order: 4;
+      img {
+        width: 709px;
+        height: 609px;
+      }
     }
 
     @media (min-width: $desktop) {
       margin-top: -367px;
       padding-left: 18.85%;
+      img {
+        width: 552px;
+        height: 499px;
+      }
     }
   }
 }

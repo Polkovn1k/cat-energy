@@ -574,6 +574,10 @@ html {
     z-index: 1;
     padding-bottom: 3px;
     text-align: center; }
+    .promo__img img {
+      display: inline-block;
+      width: 280px;
+      height: 281px; }
     @media (min-width: 768px) {
       .promo__img {
         width: 100%;
@@ -581,11 +585,17 @@ html {
         padding-bottom: 0;
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
-                order: 4; } }
+                order: 4; }
+        .promo__img img {
+          width: 709px;
+          height: 609px; } }
     @media (min-width: 1300px) {
       .promo__img {
         margin-top: -367px;
-        padding-left: 18.85%; } }
+        padding-left: 18.85%; }
+        .promo__img img {
+          width: 552px;
+          height: 499px; } }
 
 .program__container {
   margin: 0 auto;
@@ -1319,18 +1329,25 @@ html {
   margin-right: -20px;
   margin-left: -20px;
   padding-bottom: 31px; }
+  .range-slider__img img {
+    display: inline-block;
+    width: 320px;
+    height: 240px; }
   @media (min-width: 768px) {
     .range-slider__img {
       margin-right: 0;
       margin-left: 0;
       padding-bottom: 18px;
-      padding-left: 13px; } }
+      padding-left: 13px; }
+      .range-slider__img img {
+        width: 690px;
+        height: 517px; } }
   @media (min-width: 1300px) {
     .range-slider__img {
       padding-bottom: 39px; } }
 
 .range-slider__img-after {
-  display: none; }
+  display: none !important; }
 
 .range-slider__control {
   display: -webkit-box;
@@ -1852,6 +1869,7 @@ html {
     display: table;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    width: 51%;
     max-width: 180px;
     margin-bottom: 20px;
     margin-left: 49.7%;
@@ -1882,8 +1900,10 @@ html {
     width: 49%;
     text-align: center; }
     .product__img img {
+      display: inline-block;
       max-width: none;
-      width: 140px; }
+      width: 140px;
+      height: 144px; }
     @media (min-width: 768px) {
       .product__img {
         display: -webkit-box;
@@ -1903,7 +1923,12 @@ html {
                 order: -1; }
         .product__img img {
           max-width: 100%;
-          width: auto; } }
+          width: 324px;
+          height: auto;
+          min-height: 174px; } }
+    @media (min-width: 1300px) {
+      .product__img img {
+        width: 243px; } }
 
 .add-catalog__container {
   margin: 0 auto;
