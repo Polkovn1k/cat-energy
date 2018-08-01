@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border-bottom: 1px $add-color-3 solid;
 
   @media (min-width: $tablet) {}
 

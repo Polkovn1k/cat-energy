@@ -29,7 +29,7 @@
   &__container {
     @include container();
     @include max-mobile(540px);
-    padding-top: 28px;
+    padding-top: 27px;
     padding-bottom: 22px;
 
     @media (min-width: $tablet) {
@@ -112,7 +112,7 @@
     img {
       display: inline-block;
       width: 280px;
-      height: 281px;
+      height: 271px;
     }
 
     @media (min-width: $tablet) {
