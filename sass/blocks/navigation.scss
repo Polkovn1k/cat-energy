@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
 
   @media (min-width: $tablet) {}
 
@@ -6,8 +7,7 @@
 
   &__container {
     @include container();
-    @include flex-row();
-    justify-content: space-between;
+    @include flex-column-s();
     padding-top: 11px;
 
     @media (min-width: $tablet) {}
@@ -16,6 +16,7 @@
   }
 
   &__logo {
+    @include flex-element();
 
     @media (min-width: $tablet) {}
 
@@ -23,8 +24,12 @@
   }
 
   &__logo-link {
-
-    img {}
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: 191px;
+      height: 38px;
+    }
 
     @media (min-width: $tablet) {}
 
@@ -32,7 +37,8 @@
   }
 
   &__list {
-    display: none;
+    @include order-reset();
+    @include flex-column-s();
 
     @media (min-width: $tablet) {}
 
@@ -40,6 +46,13 @@
   }
 
   &__item {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: $big-text;
 
     @media (min-width: $tablet) {}
 
@@ -47,6 +60,7 @@
   }
 
   &__item-link {
+    color: inherit;
 
     @media (min-width: $tablet) {}
 
@@ -54,8 +68,10 @@
   }
 
   &__tog {
-    position: relative;
-    margin-top: 12px;
+    @include flex-element();
+    position: absolute;
+    top: 23px;
+    right: 20px;
     width: 24px;
     height: 18px;
     font-size: 0;
