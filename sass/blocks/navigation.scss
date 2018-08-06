@@ -36,11 +36,25 @@
     @media (min-width: $desktop) {}
   }
 
+  @media (max-width: $max-mobile) {
+    &__list {
+      display: none;
+    }
+
+    &__list--show,
+    &__list--nojs {
+      display: flex;
+    }
+  }
+
   &__list {
     @include order-reset();
-    @include flex-column-s();
+    flex-direction: column;
+    align-items: stretch;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      display: flex;
+    }
 
     @media (min-width: $desktop) {}
   }
