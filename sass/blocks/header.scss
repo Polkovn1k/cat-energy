@@ -2,7 +2,9 @@
   position: relative;
   border-bottom: 1px $add-color-3 solid;
 
-  @media (min-width: $tablet) {}
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
 
   @media (min-width: $desktop) {}
 

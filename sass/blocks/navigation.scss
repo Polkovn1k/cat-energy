@@ -17,6 +17,7 @@
 
   &__logo {
     @include flex-element();
+    padding-bottom: 16px;
 
     @media (min-width: $tablet) {}
 
@@ -60,6 +61,10 @@
   }
 
   &__item {
+    margin-right: -$mobile-indent;
+    margin-left: -$mobile-indent;
+    padding-top: 22px;
+    padding-bottom: 21px;
     text-align: center;
     text-transform: uppercase;
     font-family: $main-font;
@@ -67,8 +72,11 @@
     line-height: 1.1;
     font-weight: 500;
     color: $big-text;
+    border-top: 1px $add-color-3 solid;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      border-top: none;
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -101,6 +109,10 @@
     @media (min-width: $desktop) {}
   }
 
+  &__tog--close {
+    background-image: none;
+  }
+
   &__tog::before {
     @include pseudo();
     top: 0;
@@ -119,5 +131,15 @@
     width: 100%;
     height: 2px;
     background: $add-color-5;
+  }
+
+  &__tog--close::before {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  &__tog--close::after {
+    transform: rotate(-45deg);
+    top: 8px;
   }
 }

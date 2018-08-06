@@ -16,9 +16,3 @@ window.addEventListener("keydown", function(event) {
     tog.classList.remove("navigation__tog--close");
   }
 });
-/*
-tog.addEventListener("click", function(event) {
-  event.preventDefault();
-  nav.classList.remove("navigation__list--show");
-  tog.classList.remove("navigation__tog--close");
-});*/
