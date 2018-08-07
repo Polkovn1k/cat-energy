@@ -121,6 +121,7 @@
     width: 100%;
     height: 2px;
     background: $add-color-5;
+    transition: top ease 3.5s, transform ease 3.5s;
   }
 
   &__tog::after {
@@ -131,6 +132,7 @@
     width: 100%;
     height: 2px;
     background: $add-color-5;
+    transition: top ease 3.5s, transform ease 3.5s;
   }
 
   &__tog--close::before {

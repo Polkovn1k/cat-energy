@@ -480,7 +480,11 @@ html {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #222222; }
+    background: #222222;
+    -webkit-transition: top ease 3.5s, -webkit-transform ease 3.5s;
+    transition: top ease 3.5s, -webkit-transform ease 3.5s;
+    transition: top ease 3.5s, transform ease 3.5s;
+    transition: top ease 3.5s, transform ease 3.5s, -webkit-transform ease 3.5s; }
   .navigation__tog::after {
     content: "";
     position: absolute;
@@ -490,7 +494,11 @@ html {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #222222; }
+    background: #222222;
+    -webkit-transition: top ease 3.5s, -webkit-transform ease 3.5s;
+    transition: top ease 3.5s, -webkit-transform ease 3.5s;
+    transition: top ease 3.5s, transform ease 3.5s;
+    transition: top ease 3.5s, transform ease 3.5s, -webkit-transform ease 3.5s; }
   .navigation__tog--close::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
