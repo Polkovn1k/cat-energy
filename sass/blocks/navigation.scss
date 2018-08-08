@@ -8,9 +8,15 @@
   &__container {
     @include container();
     @include flex-column-s();
+    position: relative;
     padding-top: 11px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      @include max-tablet(900px);
+      @include flex-row-s();
+      justify-content: space-between;
+      padding-top: 24px;
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -19,7 +25,9 @@
     @include flex-element();
     padding-bottom: 16px;
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      padding-bottom: 0;
+    }
 
     @media (min-width: $desktop) {}
   }
@@ -32,9 +40,19 @@
       height: 38px;
     }
 
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      img {
+        width: 173px;
+        height: 58px;
+      }
+    }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      img {
+        width: 202px;
+        height: 59px;
+      }
+    }
   }
 
   @media (max-width: $max-mobile) {
@@ -54,7 +72,8 @@
     align-items: stretch;
 
     @media (min-width: $tablet) {
-      display: flex;
+      @include flex-row();
+      justify-content: space-between;
     }
 
     @media (min-width: $desktop) {}
@@ -76,6 +95,10 @@
 
     @media (min-width: $tablet) {
       border-top: none;
+      margin-right: 0;
+      margin-left: 0;
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
 
     @media (min-width: $desktop) {}

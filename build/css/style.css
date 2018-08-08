@@ -391,6 +391,7 @@ html {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    position: relative;
     padding-top: 11px; }
     @media (min-width: 768px) {
       .navigation__container {
@@ -400,17 +401,47 @@ html {
       .navigation__container {
         padding-right: 40px;
         padding-left: 40px; } }
+    @media (min-width: 768px) {
+      .navigation__container {
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 24px; } }
   .navigation__logo {
     display: block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-bottom: 16px; }
+    @media (min-width: 768px) {
+      .navigation__logo {
+        padding-bottom: 0; } }
   .navigation__logo-link {
     display: inline-block; }
     .navigation__logo-link img {
       display: inline-block;
       width: 191px;
       height: 38px; }
+    @media (min-width: 768px) {
+      .navigation__logo-link img {
+        width: 173px;
+        height: 58px; } }
+    @media (min-width: 1300px) {
+      .navigation__logo-link img {
+        width: 202px;
+        height: 59px; } }
   @media (max-width: 767px) {
     .navigation__list {
       display: none; }
@@ -433,7 +464,17 @@ html {
       .navigation__list {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; } }
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
   .navigation__item {
     margin-right: -20px;
     margin-left: -20px;
@@ -449,7 +490,11 @@ html {
     border-top: 1px #d9d9d9 solid; }
     @media (min-width: 768px) {
       .navigation__item {
-        border-top: none; } }
+        border-top: none;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 20px;
+        padding-bottom: 10px; } }
   .navigation__item-link {
     color: inherit; }
   .navigation__tog {
