@@ -26,6 +26,7 @@
     padding-bottom: 16px;
 
     @media (min-width: $tablet) {
+      margin-right: 85px;
       padding-bottom: 0;
     }
 
@@ -73,7 +74,9 @@
 
     @media (min-width: $tablet) {
       @include flex-row();
-      justify-content: space-between;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      flex-grow: 1;
     }
 
     @media (min-width: $desktop) {}
@@ -95,10 +98,20 @@
 
     @media (min-width: $tablet) {
       border-top: none;
-      margin-right: 0;
+      margin-right: 36px;
       margin-left: 0;
       padding-top: 20px;
-      padding-bottom: 10px;
+      padding-bottom: 13px;
+      font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__item:last-child {
+
+    @media (min-width: $tablet) {
+      margin-right: 0;
     }
 
     @media (min-width: $desktop) {}
