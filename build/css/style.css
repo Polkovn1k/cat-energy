@@ -392,6 +392,7 @@ html {
         -ms-flex-align: stretch;
             align-items: stretch;
     position: relative;
+    z-index: 10;
     padding-top: 11px; }
     @media (min-width: 768px) {
       .navigation__container {
@@ -420,6 +421,17 @@ html {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         padding-top: 24px; } }
+    @media (min-width: 1300px) {
+      .navigation__container {
+        max-width: 1300px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 54px; } }
+  @media (min-width: 1152px) and (max-width: 1299px) {
+    .navigation__container--main-catalog {
+      max-width: 1152px;
+      margin-right: auto;
+      margin-left: auto; } }
   .navigation__logo {
     display: block;
     -ms-flex-negative: 0;
@@ -427,7 +439,7 @@ html {
     padding-bottom: 16px; }
     @media (min-width: 768px) {
       .navigation__logo {
-        margin-right: 85px;
+        margin-right: 50px;
         padding-bottom: 0; } }
   .navigation__logo-link {
     display: inline-block; }
@@ -482,6 +494,9 @@ html {
             -ms-flex-positive: 1;
                 flex-grow: 1; } }
   .navigation__item {
+    display: block;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-right: -20px;
     margin-left: -20px;
     padding-top: 22px;
@@ -501,16 +516,23 @@ html {
         margin-left: 0;
         padding-top: 20px;
         padding-bottom: 13px;
-        font-size: 18px; } }
+        font-size: 18px;
+        color: #222222; } }
+    @media (min-width: 1300px) {
+      .navigation__item {
+        margin-right: 34px;
+        font-size: 20px;
+        line-height: 1.24;
+        color: #111111; } }
+  @media (min-width: 1300px) {
+    .navigation__item--white {
+      color: #ffffff; } }
   @media (min-width: 768px) {
     .navigation__item:last-child {
       margin-right: 0; } }
   .navigation__item-link {
     color: inherit; }
   .navigation__tog {
-    display: block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
     position: absolute;
     top: 23px;
     right: 20px;
@@ -720,6 +742,7 @@ html {
     color: #ffffff; }
     @media (min-width: 768px) {
       .promo__title {
+        max-width: 100%;
         padding-right: 50px;
         padding-bottom: 41px;
         padding-left: 87px;
@@ -748,6 +771,7 @@ html {
     color: #ffffff; }
     @media (min-width: 768px) {
       .promo__text {
+        max-width: 100%;
         z-index: 10;
         padding-right: 50px;
         padding-bottom: 44px;
@@ -1419,6 +1443,8 @@ html {
         -ms-flex-positive: 1;
             flex-grow: 1;
     min-width: 124px;
+    -ms-flex-preferred-size: 124px;
+        flex-basis: 124px;
     position: relative;
     padding-top: 13px;
     padding-bottom: 17px;

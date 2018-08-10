@@ -9,6 +9,7 @@
     @include container();
     @include flex-column-s();
     position: relative;
+    z-index: 10;
     padding-top: 11px;
 
     @media (min-width: $tablet) {
@@ -18,7 +19,16 @@
       padding-top: 24px;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      @include max-desktop();
+      padding-top: 54px;
+    }
+  }
+
+  @media (min-width: $catalog-tablet) and (max-width: $max-tablet) {
+    &__container--main-catalog {
+      @include max-tablet(1152px);
+    }
   }
 
   &__logo {
@@ -26,7 +36,7 @@
     padding-bottom: 16px;
 
     @media (min-width: $tablet) {
-      margin-right: 85px;
+      margin-right: 50px;
       padding-bottom: 0;
     }
 
@@ -83,6 +93,7 @@
   }
 
   &__item {
+    @include flex-element();
     margin-right: -$mobile-indent;
     margin-left: -$mobile-indent;
     padding-top: 22px;
@@ -103,9 +114,24 @@
       padding-top: 20px;
       padding-bottom: 13px;
       font-size: 18px;
+      color: $add-color-2;
     }
 
-    @media (min-width: $desktop) {}
+    @media (min-width: $desktop) {
+      margin-right: 34px;
+      font-size: 20px;
+      line-height: 1.24;
+      color: $big-text;
+    }
+  }
+
+  &__item--white {
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {
+      color: $white;
+    }
   }
 
   &__item:last-child {
@@ -126,7 +152,6 @@
   }
 
   &__tog {
-    @include flex-element();
     position: absolute;
     top: 23px;
     right: 20px;

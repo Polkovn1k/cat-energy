@@ -59,6 +59,7 @@
     color: $white;
 
     @media (min-width: $tablet) {
+      max-width: 100%;
       padding-right: 50px;
       padding-bottom: 41px;
       padding-left: 87px;
@@ -88,6 +89,7 @@
     color: $white;
 
     @media (min-width: $tablet) {
+      max-width: 100%;
       z-index: 10;
       padding-right: 50px;
       padding-bottom: 44px;
