@@ -359,9 +359,9 @@ html {
       border-bottom: none; } }
   @media (min-width: 1300px) {
     .header--index::before {
+      display: block;
       content: "";
       position: absolute;
-      display: block;
       z-index: 1;
       top: 0;
       right: 0;
@@ -455,6 +455,10 @@ html {
       .navigation__logo-link img {
         width: 202px;
         height: 59px; } }
+  .navigation__logo-link:hover {
+    opacity: 0.8; }
+  .navigation__logo-link:active {
+    opacity: 0.6; }
   @media (max-width: 767px) {
     .navigation__list {
       display: none; }
@@ -509,6 +513,13 @@ html {
     font-weight: 500;
     color: #111111;
     border-top: 1px #d9d9d9 solid; }
+    .navigation__item a {
+      position: relative;
+      color: inherit; }
+    .navigation__item a[href]:hover {
+      opacity: 0.6; }
+    .navigation__item a[href]:active {
+      opacity: 0.3; }
     @media (min-width: 768px) {
       .navigation__item {
         border-top: none;
@@ -524,14 +535,23 @@ html {
         font-size: 20px;
         line-height: 1.24;
         color: #111111; } }
+  .navigation__item a:not([href])::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #68b738; }
   @media (min-width: 1300px) {
     .navigation__item--white {
-      color: #ffffff; } }
+      color: #ffffff; }
+      .navigation__item--white a:not([href])::after {
+        background: currentColor; } }
   @media (min-width: 768px) {
     .navigation__item:last-child {
       margin-right: 0; } }
-  .navigation__item-link {
-    color: inherit; }
   .navigation__tog {
     position: absolute;
     top: 23px;
@@ -549,9 +569,9 @@ html {
   .navigation__tog--close {
     background-image: none; }
   .navigation__tog::before {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     top: 0;
     right: 0;
     left: 0;
@@ -563,9 +583,9 @@ html {
     transition: top ease 0.5s, transform ease 0.5s;
     transition: top ease 0.5s, transform ease 0.5s, -webkit-transform ease 0.5s; }
   .navigation__tog::after {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     bottom: 0;
     right: 0;
     left: 0;
@@ -669,9 +689,9 @@ html {
 .promo {
   position: relative; }
   .promo::before {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     z-index: 1;
     top: 0;
     right: 0;
@@ -909,9 +929,9 @@ html {
       padding-bottom: 74px; } }
 
 .program__title::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: -6px;
   left: 2px;
   width: 50px;
@@ -934,9 +954,9 @@ html {
       left: 0; } }
 
 .program__title::after {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   top: -8px;
@@ -1014,9 +1034,9 @@ html {
     padding-right: 0; } }
 
 .program__text::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   bottom: 18px;
   right: 0;
   left: 0;
@@ -1043,9 +1063,9 @@ html {
       margin-left: 0; } }
 
 .program__link::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: 7px;
   right: -34px;
   width: 21px;
@@ -1057,9 +1077,9 @@ html {
       right: -46px; } }
 
 .program__link::after {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: 3px;
   right: -42px;
   width: 0;
@@ -1105,9 +1125,9 @@ html {
 
 @media (min-width: 768px) {
   .about__container::after {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     right: -50vw;
     bottom: 0;
     left: -50vw;
@@ -1196,9 +1216,9 @@ html {
     padding-bottom: 102px; } }
 
 .about__item::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: -2px;
   left: 0px;
   width: 60px;
@@ -1262,9 +1282,9 @@ html {
 
 @media (min-width: 768px) {
   .about__item::after {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     top: -40px;
     left: 115px;
     z-index: -1;
@@ -1284,9 +1304,9 @@ html {
       background: #ffffff; } }
   @media (min-width: 768px) {
     .sample::before {
+      display: block;
       content: "";
       position: absolute;
-      display: block;
       right: 0;
       bottom: 0;
       left: 0;
@@ -1355,9 +1375,9 @@ html {
         padding-bottom: 75px; } }
   @media (min-width: 1300px) {
     .sample__container::before {
+      display: block;
       content: "";
       position: absolute;
-      display: block;
       right: 0;
       bottom: 0;
       left: 0;
@@ -1949,9 +1969,9 @@ html {
       background: #ffffff; } }
   @media (min-width: 768px) {
     .product--all::before {
+      display: block;
       content: "";
       position: absolute;
-      display: block;
       top: 103px;
       right: 0;
       bottom: 0;
@@ -2037,9 +2057,9 @@ html {
       .product__title-all {
         width: 90%; } }
   .product__title-all::before {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     top: -40px;
     left: 50%;
     width: 30px;
@@ -2052,9 +2072,9 @@ html {
         top: -80px;
         width: 60px; } }
   .product__title-all::after {
+    display: block;
     content: "";
     position: absolute;
-    display: block;
     top: -54px;
     left: 50%;
     width: 2px;
@@ -2229,9 +2249,9 @@ html {
         padding-left: 40px; } }
 
 .add-catalog__title::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   right: -50vw;
   top: 14px;
   left: -50vw;
@@ -2300,9 +2320,9 @@ html {
       background-size: cover; } }
 
 .add-catalog__all::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: 65px;
   left: 50%;
   width: 55px;
@@ -2640,9 +2660,9 @@ html {
     padding-bottom: 58px; } }
 
 .form__title::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   z-index: -1;
   top: 14px;
   right: -50vw;
@@ -2723,9 +2743,9 @@ html {
       padding-bottom: 0; } }
 
 .form__cat-inputs::after {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   right: -50vw;
   bottom: 0;
   left: -50vw;
@@ -2937,9 +2957,9 @@ html {
       padding-bottom: 27px; } }
 
 .form__radio::after {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   right: -50vw;
   bottom: 0;
   left: -50vw;
@@ -3038,9 +3058,9 @@ html {
       padding-left: 59px; } }
 
 .form__cat-thin span::before, .form__cat-thick span::before, .form__cat-unknown span::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: -3px;
   left: -46px;
   width: 30px;
@@ -3537,9 +3557,9 @@ html {
       padding-left: 58px; } }
 
 .form__addition-sugar span::before, .form__addition-water span::before, .form__addition-milk span::before, .form__addition-vito span::before {
+  display: block;
   content: "";
   position: absolute;
-  display: block;
   top: -3px;
   left: -46px;
   width: 30px;
