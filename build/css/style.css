@@ -1055,6 +1055,8 @@ html {
   font-weight: 400;
   text-transform: uppercase;
   color: #111111; }
+  .program__link:active {
+    opacity: 0.3; }
   @media (min-width: 768px) {
     .program__link {
       font-size: 20px; } }
