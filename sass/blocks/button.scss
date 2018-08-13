@@ -12,6 +12,15 @@
   color: $white;
   background: $green;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($green, 4%);
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+  }
 
   @media (min-width: $tablet) {}
 
@@ -46,9 +55,21 @@
     color: $add-color-2;
     background: $silver-bg;
 
+    &:hover {
+      background: darken($silver-bg, 4%);
+    }
+
+    &:active {
+      color: transparentize($add-color-2, 0.7);
+    }
+
     @media (min-width: $tablet) {
       margin-top: 61px;
       color: $small-text;
+
+      &:active {
+        color: transparentize($small-text, 0.7);
+      }
     }
 
     @media (min-width: $desktop) {}
