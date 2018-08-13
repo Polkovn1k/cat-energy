@@ -66,11 +66,11 @@
     }
   }
 
-  &__logo-link:hover {
+  &__logo-link[href]:hover {
     opacity: 0.8;
   }
 
-  &__logo-link:active {
+  &__logo-link[href]:active {
     opacity: 0.6;
   }
 

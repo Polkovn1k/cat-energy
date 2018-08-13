@@ -455,9 +455,9 @@ html {
       .navigation__logo-link img {
         width: 202px;
         height: 59px; } }
-  .navigation__logo-link:hover {
+  .navigation__logo-link[href]:hover {
     opacity: 0.8; }
-  .navigation__logo-link:active {
+  .navigation__logo-link[href]:active {
     opacity: 0.6; }
   @media (max-width: 767px) {
     .navigation__list {
