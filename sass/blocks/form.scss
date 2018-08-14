@@ -160,6 +160,7 @@
       @include flex-element();
       @include font-label-name();
       padding-right: 15px;
+      cursor: pointer;
     }
     input {
       @include flex-element();
@@ -202,6 +203,7 @@
       @include flex-element();
       @include font-label-name();
       padding-right: 18px;
+      cursor: pointer;
     }
     input {
       @include flex-element();
@@ -243,6 +245,7 @@
       @include flex-element();
       @include font-label-name();
       padding-right: 16px;
+      cursor: pointer;
     }
     input {
       @include flex-element();
@@ -323,6 +326,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -351,6 +357,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -378,6 +387,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -483,6 +495,7 @@
       @include flex-element();
       @include font-label-name();
       padding-right: 13px;
+      cursor: pointer;
     }
     input {
       @include flex-element();
@@ -545,6 +558,7 @@
       @include flex-element();
       @include font-label-name();
       padding-right: 11px;
+      cursor: pointer;
     }
     input {
       @include flex-element();
@@ -708,6 +722,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -735,6 +752,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -762,6 +782,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -790,6 +813,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
+    &:active {
+      opacity: 0.6;
+    }
     span {
       @include font-label-name();
       position: relative;
@@ -886,5 +912,30 @@
         text-align: left;
       }
     }
+  }
+}
+/* -----------------HOVER */
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover {
+  border-color: $small-border;
+}
+
+input[type="text"]:active,
+input[type="number"]:active,
+input[type="email"]:active,
+input[type="tel"]:active,
+textarea:active,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: $small-text;
+  outline: 1px solid $small-text;
+  ~ svg {
+    fill: $green;
   }
 }

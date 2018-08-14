@@ -2793,7 +2793,8 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
-    padding-right: 15px; }
+    padding-right: 15px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .form__cat-name span {
         font-size: 20px;
@@ -2850,7 +2851,8 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
-    padding-right: 18px; }
+    padding-right: 18px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .form__cat-weight span {
         font-size: 20px;
@@ -2906,7 +2908,8 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
-    padding-right: 16px; }
+    padding-right: 16px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .form__cat-age span {
         font-size: 20px;
@@ -2996,6 +2999,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__cat-thin:active {
+    opacity: 0.6; }
   .form__cat-thin span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3024,6 +3029,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__cat-thick:active {
+    opacity: 0.6; }
   .form__cat-thick span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3051,6 +3058,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__cat-unknown:active {
+    opacity: 0.6; }
   .form__cat-unknown span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3192,7 +3201,8 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
-    padding-right: 13px; }
+    padding-right: 13px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .form__owner-email span {
         font-size: 20px;
@@ -3271,7 +3281,8 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
-    padding-right: 11px; }
+    padding-right: 11px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .form__owner-tel span {
         font-size: 20px;
@@ -3472,6 +3483,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__addition-sugar:active {
+    opacity: 0.6; }
   .form__addition-sugar span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3497,6 +3510,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__addition-water:active {
+    opacity: 0.6; }
   .form__addition-water span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3522,6 +3537,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__addition-milk:active {
+    opacity: 0.6; }
   .form__addition-milk span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3548,6 +3565,8 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
+  .form__addition-vito:active {
+    opacity: 0.6; }
   .form__addition-vito span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3645,6 +3664,38 @@ html {
           flex-basis: 100%;
       max-width: 568px;
       text-align: left; } }
+
+/* -----------------HOVER */
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover {
+  border-color: #cdcdcd; }
+
+input[type="text"]:active,
+input[type="number"]:active,
+input[type="email"]:active,
+input[type="tel"]:active,
+textarea:active,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #444444;
+  outline: 1px solid #444444; }
+  input[type="text"]:active ~ svg,
+  input[type="number"]:active ~ svg,
+  input[type="email"]:active ~ svg,
+  input[type="tel"]:active ~ svg,
+  textarea:active ~ svg,
+  input[type="text"]:focus ~ svg,
+  input[type="number"]:focus ~ svg,
+  input[type="email"]:focus ~ svg,
+  input[type="tel"]:focus ~ svg,
+  textarea:focus ~ svg {
+    fill: #68b738; }
 
 .footer {
   background: #f2f2f2; }
