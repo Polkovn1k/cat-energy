@@ -430,10 +430,6 @@
   &__cat-thin input[type="radio"]:checked,
   &__cat-thick input[type="radio"]:checked,
   &__cat-unknown input[type="radio"]:checked {
-    ~ span:active {
-      opacity: 1;
-    }
-
     ~ span::before {
       background-image: radial-gradient(circle, $green 30%, $transparent 30%);
     }
@@ -446,9 +442,9 @@
     @media (min-width: $desktop) {}
   }
 
-  &__cat-thin input[type="radio"],
-  &__cat-thick input[type="radio"],
-  &__cat-unknown input[type="radio"] {
+  &__cat-thin input[type="radio"]:not(:checked),
+  &__cat-thick input[type="radio"]:not(:checked),
+  &__cat-unknown input[type="radio"]:not(:checked) {
     ~ span:active {
       opacity: 0.6;
     }
