@@ -326,9 +326,6 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
-    &:active {
-      opacity: 0.6;
-    }
     span {
       @include font-label-name();
       position: relative;
@@ -357,9 +354,6 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
-    &:active {
-      opacity: 0.6;
-    }
     span {
       @include font-label-name();
       position: relative;
@@ -387,9 +381,6 @@
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 46px;
-    &:active {
-      opacity: 0.6;
-    }
     span {
       @include font-label-name();
       position: relative;
@@ -439,6 +430,10 @@
   &__cat-thin input[type="radio"]:checked,
   &__cat-thick input[type="radio"]:checked,
   &__cat-unknown input[type="radio"]:checked {
+    ~ span:active {
+      opacity: 1;
+    }
+
     ~ span::before {
       background-image: radial-gradient(circle, $green 30%, $transparent 30%);
     }
@@ -449,6 +444,14 @@
     }
 
     @media (min-width: $desktop) {}
+  }
+
+  &__cat-thin input[type="radio"],
+  &__cat-thick input[type="radio"],
+  &__cat-unknown input[type="radio"] {
+    ~ span:active {
+      opacity: 0.6;
+    }
   }
 
   &__owner {

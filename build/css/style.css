@@ -2999,8 +2999,6 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
-  .form__cat-thin:active {
-    opacity: 0.6; }
   .form__cat-thin span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3029,8 +3027,6 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
-  .form__cat-thick:active {
-    opacity: 0.6; }
   .form__cat-thick span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3058,8 +3054,6 @@ html {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 46px; }
-  .form__cat-unknown:active {
-    opacity: 0.6; }
   .form__cat-unknown span {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -3097,6 +3091,11 @@ html {
     width: 40px;
     height: 40px; } }
 
+.form__cat-thin input[type="radio"]:checked ~ span:active,
+.form__cat-thick input[type="radio"]:checked ~ span:active,
+.form__cat-unknown input[type="radio"]:checked ~ span:active {
+  opacity: 1; }
+
 .form__cat-thin input[type="radio"]:checked ~ span::before,
 .form__cat-thick input[type="radio"]:checked ~ span::before,
 .form__cat-unknown input[type="radio"]:checked ~ span::before {
@@ -3107,6 +3106,11 @@ html {
   .form__cat-thick input[type="radio"]:checked ~ span::before,
   .form__cat-unknown input[type="radio"]:checked ~ span::before {
     background-image: radial-gradient(circle, #68b738 33%, transparent 33%); } }
+
+.form__cat-thin input[type="radio"] ~ span:active,
+.form__cat-thick input[type="radio"] ~ span:active,
+.form__cat-unknown input[type="radio"] ~ span:active {
+  opacity: 0.6; }
 
 .form__owner {
   margin: 0;
