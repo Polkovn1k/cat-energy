@@ -46,6 +46,13 @@
     svg {
       fill: $add-color-1;
     }
+    svg:hover {
+      fill: $green;
+    }
+    svg:active {
+      fill: $green;
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet) {}
 

@@ -35,6 +35,13 @@
   }
 
   &__logo-link {
+    &[href]:hover {
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
     img {
       width: 128px;
     }
@@ -81,6 +88,13 @@
     }
     svg {
       fill: $add-color-1;
+    }
+    svg:hover {
+      fill: $green;
+    }
+    svg:active {
+      fill: $green;
+      opacity: 0.3;
     }
 
     @media (min-width: $tablet) {

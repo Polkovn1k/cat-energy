@@ -45,6 +45,13 @@
 
   &__logo-link {
     display: inline-block;
+    &[href]:hover {
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
     img {
       display: inline-block;
       width: 191px;
@@ -64,14 +71,6 @@
         height: 59px;
       }
     }
-  }
-
-  &__logo-link[href]:hover {
-    opacity: 0.8;
-  }
-
-  &__logo-link[href]:active {
-    opacity: 0.6;
   }
 
   @media (max-width: $max-mobile) {
