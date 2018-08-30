@@ -102,6 +102,13 @@
 
   &__scale {
     flex-grow: 1;
+    height: 14px;
+    margin: 4px 9px 0 15px;
+    padding: 3px 5px;
+
+    background: $white;
+    border: 1px solid $small-border;
+    border-radius: 5px;
 
     @media (min-width: $tablet) {}
 
@@ -109,6 +116,8 @@
   }
 
   &__bar {
+    position: relative;
+    height: 100%;
 
     @media (min-width: $tablet) {}
 
@@ -116,7 +125,32 @@
   }
 
   &__handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
     font-size: 0;
+
+    border-radius: 5px;
+    background: $green;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__handle:last-child {
+    left: auto;
+    right: 0;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+  }
+
+  &__handle--hidden {
+    display: none;
 
     @media (min-width: $tablet) {}
 

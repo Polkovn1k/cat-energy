@@ -8,8 +8,9 @@
   <title>Cat Energy | Main Page</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+
   </script>
   <script src="js/picturefill.js" async=""></script>
 </head>
@@ -560,13 +561,14 @@
             </picture>
           </div>
           <div class="range-slider__control">
-            <button type="button" class="range-slider__direction">было</button>
+            <button type="button" class="range-slider__direction range-slider__direction--before">было</button>
             <div class="range-slider__scale">
-              <div type="button" class="range-slider__bar"></div>
-              <span class="range-slider__handle">левый ползунок</span>
-              <span class="range-slider__handle">правый ползунок</span>
+              <div class="range-slider__bar">
+                <span class="range-slider__handle">левый ползунок</span>
+                <span class="range-slider__handle range-slider__handle--hidden">правый ползунок</span>
+              </div>
             </div>
-            <button class="range-slider__direction">стало</button>
+            <button class="range-slider__direction range-slider__direction--after">стало</button>
           </div>
         </div>
       </div>
