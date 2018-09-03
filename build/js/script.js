@@ -24,6 +24,7 @@ var imgBefore = document.querySelector(".range-slider__img-before");
 var imgAfter = document.querySelector(".range-slider__img-after");
 var handBefore = document.querySelector(".range-slider__handle:first-child");
 var handAfter = document.querySelector(".range-slider__handle:last-child");
+var bar = document.querySelector(".range-slider__bar");
 
 btnAfter.addEventListener("click", function(event) {
   event.preventDefault();
@@ -31,6 +32,7 @@ btnAfter.addEventListener("click", function(event) {
   imgAfter.classList.remove("range-slider__img-after--hidden");
   handBefore.classList.add("range-slider__handle--hidden");
   handAfter.classList.remove("range-slider__handle--hidden");
+  bar.classList.add("range-slider__bar--after");
 });
 
 btnBefore.addEventListener("click", function(event) {
@@ -39,4 +41,5 @@ btnBefore.addEventListener("click", function(event) {
   imgAfter.classList.add("range-slider__img-after--hidden");
   handBefore.classList.remove("range-slider__handle--hidden");
   handAfter.classList.add("range-slider__handle--hidden");
+  bar.classList.remove("range-slider__bar--after");
 });
