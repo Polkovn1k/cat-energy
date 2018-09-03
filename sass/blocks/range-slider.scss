@@ -19,22 +19,12 @@
     margin-right: -20px;
     margin-left: -20px;
     padding-bottom: 31px;
-    img {
-      display: inline-block;
-      width: 320px;
-      height: 240px;
-    }
-
 
     @media (min-width: $tablet) {
       margin-right: 0;
       margin-left: 0;
       padding-bottom: 18px;
       padding-left: 13px;
-      img {
-        width: 690px;
-        height: 517px;
-      }
     }
 
     @media (min-width: $desktop) {
@@ -42,21 +32,23 @@
     }
   }
 
-  &__img-before {
+  &__img-before,
+  &__img-after {
+    display: inline-block;
+    width: 320px;
+    height: 240px;
 
     @media (min-width: $tablet) {
-
+      width: 690px;
+      height: 517px;
     }
 
     @media (min-width: $desktop) {}
   }
 
-  &__img-after {
-    display: none !important;//ВРЕМЕННО!
-
-    @media (min-width: $tablet) {}
-
-    @media (min-width: $desktop) {}
+  &__img-before--hidden,
+  &__img-after--hidden {
+    display: none;
   }
 
   &__control {
@@ -75,7 +67,6 @@
       margin-right: 0;
       margin-left: 12.6%;
       max-width: 578px;
-
     }
   }
 

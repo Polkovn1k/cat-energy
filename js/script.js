@@ -16,3 +16,27 @@ window.addEventListener("keydown", function(event) {
     tog.classList.remove("navigation__tog--close");
   }
 });
+
+/* ----------INDEX SLIDER */
+var btnBefore = document.querySelector(".range-slider__direction--before");
+var btnAfter = document.querySelector(".range-slider__direction--after");
+var imgBefore = document.querySelector(".range-slider__img-before");
+var imgAfter = document.querySelector(".range-slider__img-after");
+var handBefore = document.querySelector(".range-slider__handle:first-child");
+var handAfter = document.querySelector(".range-slider__handle:last-child");
+
+btnAfter.addEventListener("click", function(event) {
+  event.preventDefault();
+  imgBefore.classList.add("range-slider__img-before--hidden");
+  imgAfter.classList.remove("range-slider__img-after--hidden");
+  handBefore.classList.add("range-slider__handle--hidden");
+  handAfter.classList.remove("range-slider__handle--hidden");
+});
+
+btnBefore.addEventListener("click", function(event) {
+  event.preventDefault();
+  imgBefore.classList.remove("range-slider__img-before--hidden");
+  imgAfter.classList.add("range-slider__img-after--hidden");
+  handBefore.classList.remove("range-slider__handle--hidden");
+  handAfter.classList.add("range-slider__handle--hidden");
+});
