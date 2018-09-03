@@ -1687,7 +1687,9 @@ html {
 
 @media (min-width: 768px) {
   .range-slider__bar--after {
-    left: calc(100% - 30px); } }
+    left: 100%;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); } }
 
 .range-slider__handle {
   position: absolute;
